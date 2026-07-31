@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://leadership-munich.org/sitemap.xml

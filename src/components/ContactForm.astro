@@ -1,0 +1,54 @@
+---
+interface Props {
+  lang?: "de" | "en";
+}
+const { lang = "de" } = Astro.props;
+const isEn = lang === "en";
+---
+<form id="mli-contact-form" class="mli-contact-form" action="/api/contact.php" method="post" novalidate>
+  <div id="mli-contact-flash" class="alert d-none" role="status"></div>
+  <div class="row">
+    <div class="col-lg-6" style="padding:0 10px;">
+      <div class="form-group form-floating mb-3">
+        <input type="text" id="name" name="name" class="form-control no-outline" required autocomplete="organization name" />
+        <label for="name">{isEn ? "Company, Name" : "Firma, Name"} <sup>*</sup></label>
+      </div>
+      <div class="form-group form-floating mb-3">
+        <input type="text" id="phone" name="phone" class="form-control no-outline" autocomplete="tel" />
+        <label for="phone">{isEn ? "Phone" : "Telefonnummer"}</label>
+      </div>
+    </div>
+    <div class="col-lg-6" style="padding:0 10px;">
+      <div class="form-group form-floating mb-3">
+        <input type="email" id="email" name="email" class="form-control no-outline" required autocomplete="email" />
+        <label for="email">Email <sup>*</sup></label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group form-floating mb-3">
+    <input type="text" id="subject" name="subject" class="form-control no-outline" required />
+    <label for="subject">{isEn ? "Subject" : "Betreff"} <sup>*</sup></label>
+  </div>
+  <div class="form-group form-floating mb-3">
+    <textarea id="comments" class="form-control no-outline" name="comments" style="height:125px;" required></textarea>
+    <label for="comments">{isEn ? "Message" : "Nachricht"} <sup>*</sup></label>
+  </div>
+  <div class="form-group pb-3">
+    <input type="checkbox" id="privacy" name="privacy" required />
+    <label for="privacy">
+      {
+        isEn ? (
+          <>I have read and understood the <a href="/datenschutzerklaerung/">privacy policy</a><sup>*</sup></>
+        ) : (
+          <>Ich habe die <a href="/datenschutzerklaerung/">Datenschutzerklärung</a> gelesen und verstanden<sup>*</sup></>
+        )
+      }
+    </label>
+  </div>
+  <div class="mli-hp" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;">
+    <label for="website">Website</label>
+    <input type="text" id="website" name="website" tabindex="-1" autocomplete="off" />
+  </div>
+  {isEn && <input type="hidden" name="lang" value="en" />}
+  <button type="submit" class="btn btn-primary btn-lg btn-pill no-outline">{isEn ? "Send" : "Absenden"}</button>
+</form>

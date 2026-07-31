@@ -1,0 +1,1229 @@
+<!DOCTYPE html><html lang="de"><head>
+    <meta charset="utf-8">
+<title>Strategieworkshop – Methoden und Aufbau | MLI</title>
+<meta name="description" content="Strategieworkshop – Methoden und Aufbau ✓ Konkrete Unterstützung von erfahrenen Coaches mit Kunden aus Top-Unternehmen ➔ Jetzt anfragen">
+<meta name="title" content="Strategieworkshop – Methoden und Aufbau | MLI">
+<meta name="author" content="MLI - Leadership Institut">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ 
+<link rel="icon" type="image/png" href="/themes/mli-sebastian-mogener/assets/images/mli-favicon.png">
+<link rel="canonical" href="/strategieworkshop/">
+<link href="/themes/mli-sebastian-mogener/assets/vendor/bootstrap/bootstrap.css" rel="stylesheet">
+<link href="/themes/mli-sebastian-mogener/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+<link href="/themes/mli-sebastian-mogener/assets/css/main-min.css" rel="stylesheet">
+  <link href="/themes/mli-sebastian-mogener/assets/css/special-mli.css" rel="stylesheet">
+<link href="/themes/mli-sebastian-mogener/assets/css/responsive.css" rel="stylesheet">
+<style>
+
+
+ .kompetenzen-neuronen{
+    opacity: 20%;
+    position: absolute;
+    width: 100%;
+    
+}
+
+.row{
+    justify-content: space-between;
+}
+
+.accordion{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+}
+
+.accordion-item{
+    background-image: linear-gradient(149deg, rgba(220,13,122,1) 23%, rgba(150,0,56,1) 58%);
+    background-position:50% 50%;
+    padding: 40px 0 0 0;
+    border: none;
+    border-radius: 12px;
+    min-height: 101px;
+    text-align: center;
+}
+
+.accordion-item:last-of-type {
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.icon-border{
+    width: 90px;
+    height: 45px;
+    border-top-right-radius: 45px;
+    border-top-left-radius: 45px;
+    background-image: linear-gradient(50deg, rgba(220,13,122,1) 0%, rgba(150,0,56,1) 150%);
+    align-self: center;
+    display: flex;
+    justify-content: center;
+}
+
+.icon-kreis{
+    width: 70px;
+    height: 70px;
+    background-color: #ffffff;
+    border-radius: 70px;
+    margin-top: 9px;
+    z-index: 8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon{
+    width: 45px;
+    height: 45px;
+}
+
+.button-leistungen{
+    text-align: center;
+    background: none;
+    font-size: 1.2em;
+    color: #ffffff;
+    font-family: "Source SansPro Bold";
+    margin: 0;
+}
+
+.accordion-button:after {
+    display: none;
+}
+
+.accordion-body{
+    background-color: rgba(255,255,255,.2);
+    margin: 20px 0 0 0;
+    height: 100%;
+    padding: 30px 60px;
+}
+
+.accordion-body p{
+    color: #ffffff;
+    text-align:center;
+}
+
+@media screen and (max-width:900px) {
+
+    #top, #bottom{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .accordion{
+        width: 80%;
+    }
+
+    #headingTwo, #headingFour{
+        margin-top: 50px;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+
+    .accordion{
+        width: 94%;
+    }
+
+}
+
+@media (max-width: 575px){
+    .button-leistungen{
+        padding: 0 15px;
+        font-size: 1em;
+    }
+
+.accordion-item{padding-top:50px;}
+
+}
+
+/* PODCAST STYLES */
+
+.anbieter-position{
+    display: grid;
+    grid-template-columns: [line1] 1fr [line2] 1fr [line3] 1fr [line4] 1fr [line5] 1fr [end];
+}
+
+.anbieter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px;
+}
+
+.anbieter-icon{
+    width: 40px;
+}
+
+#itunes{
+  grid-column: 2 / span 1;
+  grid-row: 1;
+  align-self: center;
+  justify-self: center;
+}
+
+#spotify{
+  grid-column: 3 / span 1;
+  grid-row: 1;
+  align-self: center;
+  justify-self: center;
+}
+
+#amazon{
+  grid-column: 4 / span 1;
+  grid-row: 1;
+  align-self: center;
+  justify-self: center;
+}
+
+.teaser{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .podcast-teaser-red{
+        width: 90%;
+    }
+
+@media (max-width: 1030px){
+.anbieter {
+    flex-direction: column;
+}
+}
+
+@media (max-width: 992px){
+    .teaser{
+        align-items: start;
+    }
+    .podcast-teaser-red{
+        width: 100%;
+    }
+}
+
+@media (max-width: 778px){
+.anbieter-position{
+    grid-template-columns: [line1] 1fr [line2] 1fr [line3] 1fr [line4] 1fr [line5] 1fr [end];
+}
+
+.anbieter{min-height:100px;font-size:.7em;}
+
+#itunes{
+  grid-column: 1 / span 1;
+  grid-row: 1;
+}
+
+#spotify{
+  grid-column: 2 / span 1;
+  grid-row: 1;
+}
+
+#amazon{
+  grid-column: 3 / span 1;
+  grid-row: 1;
+}
+}
+/* PODCAST STYLES END */
+
+ </style>
+<script src="/themes/mli-sebastian-mogener/assets/vendor/jquery.min.js"></script>
+<script src="/themes/mli-sebastian-mogener/assets/vendor/bootstrap/bootstrap.min.js"></script>
+<script src="/themes/mli-sebastian-mogener/assets/js/special-mli-app.js"></script> 
+<script src="/themes/mli-sebastian-mogener/assets/js/app.js"></script>
+
+ 
+
+
+<script>
+
+$(document).ready(function () {
+  $('#headingOne').hover(
+    function () {
+      $('#collapseOne').stop().animate({ height: 'toggle', opacity: 'toggle' }, 500);
+    },
+    function () {
+      $('#collapseOne').stop().animate({ height: 'toggle', opacity: 'toggle' }, 500);
+    }
+  );
+});
+
+
+$(document).ready(function () {
+  $('#headingTwo').hover(
+    function () {
+      $('#collapseTwo').stop().animate({ height: 'toggle', opacity: 'toggle' }, 500);
+    },
+    function () {
+      $('#collapseTwo').stop().animate({ height: 'toggle', opacity: 'toggle' }, 500);
+    }
+  );
+});
+
+
+$(document).ready(function () {
+  $('#headingThree').hover(
+    function () {
+      $('#collapseThree').stop().animate({ height: 'toggle', opacity: 'toggle' }, 500);
+    },
+    function () {
+      $('#collapseThree').stop().animate({ height: 'toggle', opacity: 'toggle' }, 500);
+    }
+  );
+});
+
+
+$(document).ready(function () {
+  $('#headingFour').hover(
+    function () {
+      $('#collapseFour').stop().animate({ height: 'toggle', opacity: 'toggle' }, 500);
+    },
+    function () {
+      $('#collapseFour').stop().animate({ height: 'toggle', opacity: 'toggle' }, 500);
+    }
+  );
+});
+
+$(document).ready(function () {
+  $('#headingFive').hover(
+    function () {
+      $('#collapseFive').stop().animate({ height: 'toggle', opacity: 'toggle' }, 500);
+    },
+    function () {
+      $('#collapseFive').stop().animate({ height: 'toggle', opacity: 'toggle' }, 500);
+    }
+  );
+});
+
+</script>
+
+       
+       
+    <script id="usercentrics-cmp" src="https://web.cmp.usercentrics.eu/ui/loader.js" data-settings-id="0qtDDaIFgHMzAV" async=""></script><script charset="utf-8" type="text/javascript" src="https://js-eu1.hsforms.net/forms/embed/v2.js"></script></head><body class="home-layout page-strategieworkshop">
+    <div id="top"></div>
+<!-- Header -->
+        <header id="layout-header">
+          
+            <!-- Nav -->
+                <nav class="navbar navbar-expand-xl navbar-light fixed-top" style="padding: 0;z-index:9;">
+          <div class="container-fluid bg-white">
+             <a class="navbar-brand" href="/"><img alt="MLI Logo" class="navbar-logo" src="/storage/app/media/Global/MLI-Logo-web.webp"></a>
+                 
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" style="background: none !important;">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse desktop-align" id="navbarNavDropdown">
+            <div class="row text-navi">
+            <ul class="navbar-nav">
+                            <li role="presentation" class="nav-item dropdown   ">
+                            <a class="nav-link" href="/stark-in-fuehrung/">
+                    Stark in Führung
+                </a>
+            
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li>
+                                    </li><li role="presentation" class="nav-item dropdown   bg-blaugrau">
+                            <a class="nav-link" href="/leadership-development/">
+                    Leadership Development
+                </a>
+            
+                    </li>
+                <li role="presentation" class="nav-item dropdown   bg-petrol">
+                            <a class="nav-link" href="/leadership-coaching-2025/">
+                    Leadership Coaching
+                </a>
+            
+                    </li>
+                <li role="presentation" class="nav-item dropdown   bg-blaugrau">
+                            <a class="nav-link" href="/leadership-development-fuer-moderne-unternehmen-2025/">
+                    Leadership Programm
+                </a>
+            
+                    </li>
+    
+                    
+                </ul>
+                    </li>
+                <li role="presentation" class="nav-item dropdown   ">
+                            <a class="nav-link" href="/strategieaktivierung/">
+                    Strategieaktivierung
+                </a>
+            
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li>
+                                    </li><li role="presentation" class="nav-item dropdown   bg-petrol">
+                            <a class="nav-link" href="/leitbild-und-strategieentwicklung/">
+                    Strategieentwicklung
+                </a>
+            
+                    </li>
+                <li role="presentation" class="nav-item dropdown   bg-rotpink">
+                            <a class="nav-link" href="/apadtive-organisationsentwicklung-2025/">
+                    Organisationsentwicklung
+                </a>
+            
+                    </li>
+                <li role="presentation" class="nav-item dropdown   bg-ocker">
+                            <a class="nav-link" href="/strategieumsetzung-2025/">
+                    Strategieumsetzung
+                </a>
+            
+                    </li>
+    
+                    
+                </ul>
+                    </li>
+                <li role="presentation" class="nav-item dropdown   ">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Unternehmen
+            </a>
+            
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li>
+                                    </li><li role="presentation" class="nav-item dropdown   ">
+                            <a class="nav-link" href="/unser-anspruch/">
+                    Unser Anspruch
+                </a>
+            
+                    </li>
+                <li role="presentation" class="nav-item dropdown   ">
+                            <a class="nav-link" href="/team/">
+                    Unser Team
+                </a>
+            
+                    </li>
+                <li role="presentation" class="nav-item dropdown   ">
+                            <a class="nav-link" href="/arbeiten-beim-mli/">
+                    Karriere
+                </a>
+            
+                    </li>
+    
+                    
+                </ul>
+                    </li>
+                <li role="presentation" class="nav-item dropdown   ">
+                            <a class="nav-link" href="/podcast-2025/">
+                    Podcast
+                </a>
+            
+                    </li>
+                <li role="presentation" class="nav-item dropdown   ">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Leadership Wissen
+            </a>
+            
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li>
+                                    </li><li role="presentation" class="nav-item dropdown   ">
+                            <a class="nav-link" href="/keynotes-und-speaker/">
+                    Keynotes and Speaker
+                </a>
+            
+                    </li>
+                <li role="presentation" class="nav-item dropdown   ">
+                            <a class="nav-link" href="/leadership-know-how/">
+                    Leadership Know How
+                </a>
+            
+                    </li>
+                <li role="presentation" class="nav-item dropdown   ">
+                            <a class="nav-link" href="/leadership-stories/">
+                    Leadership Stories
+                </a>
+            
+                    </li>
+                <li role="presentation" class="nav-item dropdown   ">
+                            <a class="nav-link" href="/ressourcen/">
+                    Resources
+                </a>
+            
+                    </li>
+    
+                    
+                </ul>
+                    </li>
+                <li role="presentation" class="nav-item dropdown   blendout">
+                            <a class="nav-link" href="/fortbildungen-events-2025/">
+                    Events
+                </a>
+            
+                    </li>
+                <li role="presentation" class="nav-item dropdown   ">
+                            <a class="nav-link" href="/kontakt/">
+                    Kontakt
+                </a>
+            
+                    </li>
+                <li role="presentation" class="nav-item dropdown   flagDE">
+                            <a class="nav-link" href="/en/">
+                    EN
+                </a>
+            
+                    </li>
+                </ul>
+                </div>
+          </div>
+        </div></nav>
+        <script>
+  document.addEventListener('click', function (event) {
+    var isClickInsideNavbar = event.target.closest('.navbar');
+    if (!isClickInsideNavbar) {
+      // Clicked outside the navbar, close the navbar if it's open
+      var navbarToggler = document.querySelector('.navbar-toggler');
+      var navbarCollapse = document.querySelector('.navbar-collapse');
+      
+      if (navbarCollapse.classList.contains('show')) {
+        navbarToggler.click();
+      }
+    }
+  });
+</script>
+  <style>
+        #LeadershipKnowHow-SubDropdown{
+            padding: 0;
+        }
+        #LeadershipKnowHow-SubDropdown .dropdown-menu{
+            min-width: 120%;
+            border-radius: none;
+            margin-top: -4px;
+            left: 0 !important;
+        }
+
+        
+        .flagDE{background:url('/storage/app/media/Global/flagge-EN.jpg') 105% 50%;background-size:30%;background-repeat:no-repeat;color:#fff!important;}
+        </style>
+            
+
+ 
+            
+ 
+ 
+        </header>
+<!-- Content -->
+        <section id="layout-content">
+        <button class="btn-primary btn backtotop" onclick="window.scrollTo({top: 0, behavior: &quot;smooth&quot;});"><i class="bi bi-arrow-up"></i></button>
+
+<style>
+.backtotop{position:fixed;bottom:80px;right:30px;z-index:99;}
+</style>                
+        <!-- HEADER IMAGE -->
+        
+        
+         
+         
+         
+         
+        
+                    <div id="mli-slider" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-touch="true">
+               <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000" style="overflow:hidden;">                       
+                        <!-- Verlaufslayer -->
+                        <div class="overlay-header"></div>
+                        <!-- Verlaufslayer END -->
+                           <img src="/storage/app/media/Slider-Motive-Mobile/Strategieworkshop_Header_Mobile.webp" class="d-block d-sm-block d-md-none d-lg-none d-xl-none" alt="">
+                           <img src="/storage/app/media/Slider-Motive-Desktop/Strategieworkshop_Header_Web.webp" style="width:100%;" class="d-none d-sm-none d-md-block d-lg-block d-xl-block" alt="">
+                                            <div class="container" style="padding:0 10%;">
+                            <div id="mliCaption" class="carousel-caption d-none d-sm-none d-md-block d-lg-block d-xl-block" style="z-index: 3;" data-aos="fade-down" data-aos-delay="1000" data-aos-duration="2000">                    
+                               <h1 class="slide-head-top" style="z-index:3;">Strategieworkshop: Methoden, Aufbau und wie wir beim MLI damit Erfolge erzielen</h1>
+                               <div style="z-index: 3;" class=" bg-neuro slide-head-container">
+                                     <div class="slide-head"><p>Strategieworkshops beim MLI helfen Ihnen, klare Ziele zu definieren und Ihre Strategie zukunftssicher aufzustellen. Erfahren Sie, wie wir Sie zum Erfolg führen.</p></div>
+                                     <div class="slider-cta-btn">
+                                        <a href="/kontakt" class="" target="_blank">
+                                           <button class="btn btn-secondary rotpink " style="background: #ffffff !important;">Jetzt beraten lassen</button>
+                                        </a>
+                                     </div>                     
+                              </div>
+                            </div> 
+                            <div id="mliCaption" class="carousel-caption d-block d-sm-block d-md-none d-lg-none d-xl-none" style="z-index: 3;">
+                    
+                          <h1 class="slide-head-top" style="z-index:3;">Strategieworkshop: Methoden, Aufbau und wie wir beim MLI damit Erfolge erzielen</h1>
+                    
+                     <div style="z-index: 3;" class="bg-neuro slide-head-container">
+                     <div class="slide-head"><p>Strategieworkshops beim MLI helfen Ihnen, klare Ziele zu definieren und Ihre Strategie zukunftssicher aufzustellen. Erfahren Sie, wie wir Sie zum Erfolg führen.</p></div>
+                     
+                     <div class="slider-cta-btn">
+                        <a href="/kontakt" class="" target="_blank">
+                           <button class="btn btn-secondary rotpink" style="background: #ffffff !important;">
+                           Jetzt beraten lassen
+                           </button>
+                        </a>
+                     </div>
+                   
+                  </div>
+                  </div>  
+                                
+                        </div>
+                   </div>
+               </div>
+            </div>
+                <!-- HEADER IMAGE END -->
+        
+        
+        <!-- Main container: Intro -->
+        
+        
+        
+        
+        
+        
+         
+            <div id="" class="container-fluid bg-white  ">     
+                <div class="container"> 
+                   <div><h2>Strategieworkshops beim MLI: Zukunft gestalten, Erfolge sichern</h2></div>
+                   <div><p><br></p><div class="row"><div class="col-lg-6 pe-3"><p>Wo kommen wir her, wo stehen wir gerade und wo wollen wir hin? Eine Strategie ist lebendig, fließend wie das Leben. Deshalb ist es wichtig, sich regelmäßig, mindestens einmal im Jahr mit den Führungskräften oder dem Team zusammenzusetzen und genau diese Fragen zu beantworten. So kann die beschlossene Strategie immer wieder an die realen Bedingungen angepasst werden oder überhaupt erst eine Strategie entwickelt werden. &nbsp;&nbsp;</p></div><div class="col-lg-6 ps-3"><p>Wir beim MLI führen seit vielen Jahren erfolgreich Strategieworkshops mit renommierten Kund:innen und Unternehmen durch.&nbsp;</p><p>In diesem Beitrag zeigen wir Ihnen unsere bewährte Herangehensweise, wie ein Strategieworkshop zum Erfolg wird und warum es sich lohnt, ihren Strategieworkshop mit uns zu organisieren.</p></div></div><p><br></p><div class="row"><div class="col-lg-2" style="text-align: center;"><br></div><div class="col-lg-8"><div class="card bg-neuro" style="padding:2em 2em 0em 2em;"><div class="card-body"><p style="text-align: center;"><span style="color: rgb(255, 255, 255);">Vereinbaren Sie hier Ihr kostenloses Beratungsgespräch!<br></span></p><p style="color: rgb(255, 255, 255); text-align: center;"><a class="btn btn-secondary" href="/kontakt/" rel="noopener noreferrer" target="_blank">Kontaktieren Sie uns hier</a></p></div></div></div><div class="col-lg-2" style="text-align: center;"><br></div></div></div>
+                </div>
+            </div> 
+           
+        <!-- Main container End: Intro -->
+
+         
+
+
+
+
+        <!-- Main container: Sektion Text-->
+        
+        
+        
+        
+        
+         
+
+ 
+            <div id="" class="container-fluid  bg-hellgrau ">     
+                <div class="container"> 
+                   <div><h2>Inhaltsübersicht: Alles, was Sie über unsere Strategieworkshops wissen müssen</h2></div>
+                   <div><p><br></p><ol><li><a href="#1">Strategieworkshop: Die Bedeutung einer guten Strategie</a></li><li><a href="#2">Methoden und Rahmenbedingungen: Der Kompass für einen erfolgreichen Strategieworkshop</a></li><li><a href="#3">Strategieworkshop: Ziele und Ablauf</a></li><li><a href="#4">Schritt 1: Teilnehmerauswahl und Einstiegsinterviews</a></li><li><a href="#5">Schritt 2: Workshop-Vorbereitung</a></li><li><a href="#6">Schritt 3: Vertrauensbildung und Alignment</a></li><li><a href="#7">Schritt 4: Standortbestimmung</a></li><li><a href="#8">Schritt 5: SWOT-Analyse</a></li><li><a href="#9">Schritt 6 Strategieformulierung</a></li><li><a href="#10">Schritt 7: Maßnahmenplanung</a></li><li><a href="#11">Ergebnisse eines erfolgreichen Strategieworkshops</a></li><li><a href="#12">Häufige Fehler und wie man sie vermeidet</a></li><li><a href="#13">Strategieworkshops mit dem MLI</a></li></ol></div>
+                </div>
+            </div>
+        
+          
+
+           
+          
+  
+
+        <!-- Main container End: Sektion Text -->
+        <!-- Main container: Sektion Trenner Bild-->
+        
+        
+        
+        
+        
+         
+        
+          
+        <div id="" class="bg-white">
+            <div class="full-width-img" style="background-image:url(/storage/app/media/Trenner-Motive-allgemein/MLI-Weiterbildung.webp);background-size:cover;min-height:400px;">
+                
+                <div class="row">
+                                                            <div class="col-lg-6 col-md-4 col-sm-2 hidden-xs">
+        
+                    </div>
+                    <div class="col-lg-6 col-md-8 col-sm-10 col-12">
+                                             </div>
+                                    </div>
+                
+            </div>
+        </div>
+               
+      
+        <!-- Main container End: Sektion Trenner Bild -->
+       
+         <!-- Main container: Sektion Text 2 -->
+        
+        
+        
+        
+        
+        
+        
+        
+
+                        <div id="1" class="container-fluid bg-white  ">     
+                <div class="container"> 
+                   <div><h2>Strategieworkshop: Die Bedeutung einer guten Strategie</h2></div>
+                   <div><p><br></p><p>Wenn Sie mit dem Auto eine Reise planen, können Ihr Reiseweg und die Zielerreichung unterschiedlich ausfallen, je nachdem, ob Sie in Ihrem Navigationsgerät den kürzesten Weg auswählen oder den schnellsten.&nbsp;</p><p>Ähnlich verhält es sich mit einer Strategie. Viele Wege können zum erwünschten Ziel führen. Doch welches ist der günstigste für Ihr Unternehmen und wissen Sie überhaupt genau, wo Sie hinwollen?</p><p>Diese und viele weitere Fragen beantwortet die Strategie.</p><p><br></p><div class="card bg-neuro" style="padding:2em 2em 0em 2em;"><div class="card-body"><p style="text-align: center;"><span style="color: rgb(255, 255, 255);">In diesem Sinne definieren wir <strong>Strategie als das zielgerichtete, gemeinsam abgestimmte Vorgehen eines Unternehmens</strong> zur Erreichung der gesteckten Ziele.<br></span></p></div></div><p><br></p><div class="row"><div class="col-lg-6 pe-3"><p>Wir laden Sie ein, Ihr Unternehmen und seine Mitglieder als Teil einer Expedition in die Zukunft zu betrachten. Denn genau das ist es, was die Umsetzung einer Strategie heute ausmacht: Es ist eine Reise ins Unbekannte. Auf dem Weg zum Ziel müssen Sie Komplexität und Ungewissheit meistern.</p><p>Eine gute Strategie unterstützt Unternehmen dabei, sich einerseits klar darüber zu werden, wo die Reise hingehen soll, andererseits angesichts der vielen unbekannten Faktoren im Umfeld die passenden Bedingungen für gutes Gelingen zu schaffen.&nbsp;</p><p>Dabei geht es auch darum, Raum für einen Faktor zu schaffen, der sich nicht einkalkulieren lässt: Den Zufall.</p></div><div class="col-lg-6 ps-3"><p>Mit einer guten, regelmäßig an aktuelle Bedingungen angepassten Strategie kann ein Unternehmen jederzeit auf Veränderungen reagieren, statt hilflos im Strom der Ereignisse zu treiben.&nbsp;</p><p>Ein gelungener Strategieworkshop bildet hierfür die perfekte Basis.&nbsp;</p><p>Der erste wesentliche Schritt eines solchen Strategieworkshops ist es, ein gemeinsames Verständnis für den Begriff Strategie zu schaffen. Mit unserem Bild der explorativen Strategie in Form einer Expedition verliert der Begriff, der ja ursprünglich aus der Kriegsführung stammt, seinen abstrakten Charakter und wird für alle Teilnehmenden erlebbar.</p></div></div><p><br></p><div class="row"><div class="col-lg-3" style="text-align: center;"><br></div><div class="col-lg-6"><div class="card bg-neuro" style="padding:2em 2em 0em 2em;"><div class="card-body"><p style="text-align: center;"><span style="color: rgb(255, 255, 255);">Kontaktieren Sie uns jetzt für Ihren individuellen Strategie-Workshop.<br></span></p><p style="color: rgb(255, 255, 255); text-align: center;"><a class="btn btn-secondary" href="/kontakt/" rel="noopener noreferrer" target="_blank">Zum kostenlosen Beratungsgespräch</a></p></div></div></div><div class="col-lg-3" style="text-align: center;"><br></div></div></div>
+
+                                    </div>
+            </div> 
+            
+        
+        
+        
+        
+        
+        
+        
+
+                        <div id="2" class="container-fluid  bg-hellgrau  ">     
+                <div class="container"> 
+                   <div><h2>Methoden und Rahmenbedingungen: Der Kompass für einen erfolgreichen Strategieworkshop</h2></div>
+                   <div><p><br></p><p>Unsere erfolgreichen Strategieworkshops basieren auf einer Kombination bewährter Analysemethoden und neuer, ganzheitlicher Ansätze.</p><div class="container" style=" display: flex;justify-content: space-between;"><div class="column" style="flex: 1;padding: 10px;"><ol style="counter-reset: item;"><li style="counter-increment: item;"><strong>Klassische Analysetools</strong>: Methoden wie Porter's Five Forces, SWOT und PEST-Analyse bilden das Fundament der Standortbestimmung und Strategieentwicklung.</li><li style="counter-increment: item;"><strong>Neurosoziale Ebene</strong>: Wir integrieren unsere <a href="/leadership-development-neurosoziale-fuehrung-ein-fachlicher-ratgeber/">Neuroleadership</a>-Tools, wie die Neuroampel. So wird beispielsweise die "Perceived Performance" berücksichtigt, das heißt, wie Produkte, das Unternehmensauftreten oder bestimmte Triggerpunkte neurobiologisch auf die verschiedenen Beteiligten wirken.</li><li style="counter-increment: item;"><strong>Vogelperspektive</strong>: Wir ermutigen die Teilnehmer, das Unternehmen aus einer übergeordneten Perspektive zu betrachten.</li></ol></div><div class="column" style="flex: 1;padding: 10px;"><ol style="counter-reset: item;"><li style="display:none;"><br></li><li style="display:none;"><br></li><li style="display:none;"><br></li><li style="counter-increment: item;"><strong>Iterativer Ansatz</strong>: Wir verstehen Strategie als einen kontinuierlichen Prozess, der regelmäßig angepasst werden muss. Dies wird auch in den von uns geleiteten Strategieworkshops deutlich.</li><li style="counter-increment: item;"><strong>Kreative und agile Methoden</strong>: Wir nutzen ganz selbstverständlich Elemente des Design Thinkings und agile Methoden in unseren Workshops und bei der Planung von Umsetzungsschritten.</li></ol><p><br>Wichtig ist, dass Ihr Strategieworkshop in einem geschützten Raum stattfindet, der frei von Alltagshektik ist und einen offenen Austausch ermöglicht.</p></div></div><p><br></p><p style="color: rgb(255, 255, 255); text-align: center;"><a class="btn btn-primary" href="/kontakt/" rel="noopener noreferrer" target="_blank">Neugierig? Dann kontaktieren Sie uns!</a></p></div>
+
+                                    </div>
+            </div> 
+                    <!-- Main container End: Sektion Text  2-->
+        <!-- Main container: Sektion Trenner Bild 2-->
+        
+        
+        
+        
+        
+          
+        
+          
+        <div id="" class="bg-white">
+            <div class="full-width-img" style="background-image:url(/storage/app/media/Trenner-Motive-allgemein/MLI-Seminar-Sebastian%20Morgner.webp);background-size:cover;min-height:400px;">
+               
+                <div class="row">
+                                                            <div class="col-lg-6 col-md-4 col-sm-2 hidden-xs">
+        
+                    </div>
+                    <div class="col-lg-6 col-md-8 col-sm-10 col-12">
+                        <div class="text-overlay" style="background-color:rgba(255,255,255,0);">
+                            
+                        </div>
+                     </div>
+                                    </div>
+               
+            </div>
+        </div>
+                <!-- Main container End: Sektion Trenner Bild 2 --> 
+        <!-- Main container: Sektion MLI Test -->
+       
+        
+        
+        
+
+ 
+              
+                
+                  
+                  
+               
+                
+           
+
+        
+        <!-- Main container End: Sektion MLI Test -->
+        <!-- Main container: Sektion Text 3 -->
+        
+        
+        
+        
+        
+        
+
+ 
+            <div id="3" class="container-fluid bg-white  ">     
+                <div class="container"> 
+                   <div><h2>Strategieworkshop: Ziele und Ablauf</h2></div>
+                   <div><p><br></p><p>Wie sieht ein Strategieworkshop nun konkret aus? Lassen Sie uns den Ablauf, wie wir es angehen und auch Ihnen empfehlen, kurz beschreiben.</p><p>Die Hauptziele eines Strategieworkshops nach diesem Ansatz sind:</p><ul><li>Aktuelle Standortbestimmung: Wo stehen wir gerade</li><li>Ganzheitliche Analyse des Unternehmensumfelds</li><li>Identifikation von Erfolgshebeln angesichts der aktuellen Lage&nbsp;</li><li>Entwicklung einer adaptiven Strategie mit konkreten Zielen und OKRs (Objective Key Results)</li></ul><p><br></p><p>Der typische Ablauf eines Strategieworkshops umfasst:</p><ol><li>Tiefgehende Vorbereitung: Sorgfältige Teilnehmerauswahl und Durchführung von Einstiegsinterviews.</li><li>Vertrauensbildung: Schaffung einer offenen Arbeitsatmosphäre, indem mögliche Kommunikationshürden von Anfang an adressiert werden.</li><li>Rückblick: Analyse bisheriger Erfolge und Herausforderungen.</li><li>Umfeldanalyse: Untersuchung externer Faktoren unter Berücksichtigung der neurosozialen Ebene.</li><li>Strategieentwicklung: Formulierung einer flexiblen Strategie, die regelmäßig überprüft und angepasst werden kann.</li></ol><p><br></p><p>Lassen Sie uns nun die konkreten Schritte im Einzelnen anschauen.</p></div>
+                   
+                </div>
+                
+            </div>
+
+        
+        
+        
+        
+        
+
+ 
+            <div id="4" class="container-fluid   ">     
+                <div class="container"> 
+                   <div><h3><span style="color: rgb(177, 20, 73);">Schritt 1:</span><br>Teilnehmerauswahl und Einstiegsinterviews</h3></div>
+                   <div><p><br></p><p>Im ersten Schritt geht es darum, sich darüber klarzuwerden, wer überhaupt die richtigen Leute sind, um die strategische Ausrichtung beurteilen zu können. Sie identifizieren also Schlüsselpersonen, die für die Strategie wichtig sind. Dies können interne Personen, aber in Einzelfällen auch externe Experten zu speziellen, erfolgskritischen Themen sein.</p><p>Eines unserer echten Erfolgsgeheimnisse ist, dass wir vorab mit diesen Schlüsselpersonen Einzelinterviews durchführen. Diese dienen der Informationssammlung, der Identifikation von wichtigen Themen, Herausforderungen und dem Verständnis individueller Perspektiven.</p><p>Denn: Der Erfolg eines Strategieworkshops steht und fällt mit der passenden Vorbereitung!</p><p>Daher ist dieser Schritt sehr wichtig.</p><p style="color: rgb(255, 255, 255); text-align: center;"><a class="btn btn-primary" href="/kontakt/" rel="noopener noreferrer" target="_blank">Neugierig? Dann kontaktieren Sie uns!</a></p></div>
+                   
+                </div>
+                
+            </div>
+
+        
+        
+        
+        
+        
+
+ 
+            <div id="5" class="container-fluid   ">     
+                <div class="container"> 
+                   <div><h3><span style="color: rgb(177, 20, 73);">Schritt 2:</span><br>Workshop-Vorbereitung</h3></div>
+                   <div><p><br></p><p>Auf Basis der Interviews mit den Schlüsselpersonen erarbeiten wir gemeinsam mit unseren Kund:innen das Konzept für den Strategie-Workshop. Unsere Unternehmen schätzen es dabei sehr, dass sie sich auf unsere langjährige Erfahrung aus verschiedenen Branchen verlassen können. Denn selten gibt es in Unternehmen Experten für Strategieentwicklung. So können sich die Mitarbeitenden des Unternehmens auf die Inhalte fokussieren, während wir die optimale Workshop-Struktur mit ihnen erarbeiten.</p></div>
+                   
+                </div>
+                
+            </div>
+
+        
+        
+        
+        
+        
+
+ 
+            <div id="6" class="container-fluid   ">     
+                <div class="container"> 
+                   <div><h3><span style="color: rgb(177, 20, 73);">Schritt 3: <br></span>Vertrauensbildung und Alignment</h3></div>
+                   <div><p><br></p><p>Eine wichtige Voraussetzung für das Gelingen eines Strategieworkshops ist das Vertrauen unter den Teilnehmenden. Bevor wir daher mit dem eigentlichen Programm starten, schauen wir gemeinsam, wo es in der Vergangenheit Kommunikationshürden, Spannungen oder andere Befindlichkeiten gab.&nbsp;</p><p>Wir schaffen die Grundlage dafür, dass eine offene, vertrauensvolle Kommunikation möglich wird. So entsteht ein Umfeld, in dem sich alle Teilnehmer verstanden fühlen und effektiv zusammenarbeiten können.</p></div>
+                   
+                </div>
+                
+            </div>
+
+        
+        
+        
+        
+        
+
+ 
+            <div id="7" class="container-fluid   ">     
+                <div class="container"> 
+                   <div><h3><span style="color: rgb(177, 20, 73);">Schritt 4:</span><br>Standortbestimmung</h3></div>
+                   <div><p><br></p><p>In diesem wichtigen Schritt werden als erstes die eigenen Potenziale betrachtet. Wo kommen wir her, was sind unsere Ressourcen und Stärken?&nbsp;</p><p>Auf diese Potenzialanalyse folgt eine ganzheitliche Markt- und Umfeldanalyse.&nbsp;</p><p>Wir empfehlen dafür klassische Tools wie Porter's Five Forces und die PESTL-Analyse. Dabei geht es darum, das politische, wirtschaftliche, steuerliche und legislative Umfeld zu screenen, um zu sehen, ob es irgendwelche strategisch relevanten Themen gibt, auf die es zu achten gilt.</p><p>Häufig bereiten wir diese Analyse im Vorfeld mit den Unternehmen bereits vor, so dass wir im Workshop direkt die Ergebnisse präsentieren können. Das spart vor Ort Zeit und verhindert, dass sich die Teilnehmenden in Diskussionen über einzelne Fakten verstricken.</p></div>
+                   
+                </div>
+                
+            </div>
+
+        
+        
+        
+        
+        
+
+ 
+            <div id="8" class="container-fluid   ">     
+                <div class="container"> 
+                   <div><h3><span style="color: rgb(177, 20, 73);">Schritt 5:</span><br>SWOT-Analyse</h3></div>
+                   <div><p><br></p><p>Nachdem die wichtigsten Faktoren im Innen und Außen identifiziert sind, können über eine SWOT – Analyse die Stärken, Schwächen, Chancen und Risiken abgebildet werden. Hierbei wird auch die neurosoziale Ebene berücksichtigen.</p><p>Aus dieser SWOT-Analyse werden dann die größten Erfolgstreiber, die größten Erfolgshebel abgeleitet, die dann im nächsten Schritt in strategische Zielsetzung und strategische Meilensteine überführt werden</p></div>
+                   
+                </div>
+                
+            </div>
+
+        
+        
+        
+        
+        
+
+ 
+            <div id="9" class="container-fluid   ">     
+                <div class="container"> 
+                   <div><h3><span style="color: rgb(177, 20, 73);">Schritt 6:</span><br>Strategieformulierung</h3></div>
+                   <div><p><br></p><p>Es liegen nun alle Informationen vor, um die strategischen Ziele abzuleiten beziehungsweise bestehende Ziele anzupassen. Die Ziele werden so definiert, dass sie flexibel genug sind, um auf Veränderungen reagieren zu können.</p></div>
+                   
+                </div>
+                
+            </div>
+
+        
+        
+        
+        
+        
+
+ 
+            <div id="10" class="container-fluid   ">     
+                <div class="container"> 
+                   <div><h3><span style="color: rgb(177, 20, 73);">Schritt 7:</span><br>Maßnahmenplanung</h3></div>
+                   <div><p><br></p><p>Wir wissen nun, wo es hingehen soll. Im nächsten Schritt gilt es, einen Aktionsplan zu entwickeln, mit überschaubaren Zwischenschritten und regelmäßigen Überprüfungs- und Anpassungsmöglichkeiten.</p><p>Unseren Kund:innen empfehlen wir gerne sogenannte Umsetzungs-Sprints, eine agile Methode, die ihren Ursprung in der Software-Entwicklung hat. Dabei werden die Maßnahmen in kleine, messbare Schritte auf Basis eines definierten Outcomes zerlegt. Meist eignet sich hierfür eine quartalsweise Betrachtung. &nbsp;So können schnell erste Erfolge erreicht werden und werden mögliche Hindernisse zeitnah identifiziert.</p><p><br></p><div class="row"><div class="col-lg-2" style="text-align: center;"><br></div><div class="col-lg-8"><div class="card bg-neuro" style="padding:2em 2em 0em 2em;"><div class="card-body"><p style="text-align: center;"><span style="color: rgb(255, 255, 255);">Vereinbaren Sie hier Ihr kostenloses Beratungsgespräch!<br></span></p><p style="color: rgb(255, 255, 255); text-align: center;"><a class="btn btn-secondary" href="/kontakt/" rel="noopener noreferrer" target="_blank">Kontaktieren Sie uns hier</a></p></div></div></div><div class="col-lg-2" style="text-align: center;"><br></div></div></div>
+                   
+                </div>
+                
+            </div>
+        <!-- Main container End: Sektion Text  3 -->
+          <!-- Main container: Sektion Trenner Bild 3-->
+        
+        
+        
+        
+        
+          
+        
+          
+        <div id="" class="bg-white">
+            <div class="full-width-img" style="background-image:url(/storage/app/media/Trenner-Motive-allgemein/MIL-Idea-Hack.webp);background-size:cover;min-height:400px;">
+               
+                <div class="row">
+                                                            <div class="col-lg-6 col-md-4 col-sm-2 hidden-xs">
+        
+                    </div>
+                    <div class="col-lg-6 col-md-8 col-sm-10 col-12">
+                        <div class="text-overlay" style="background-color:rgba(255,255,255,0);">
+                            
+                        </div>
+                     </div>
+                                    </div>
+               
+            </div>
+        </div>
+                <!-- Main container End: Sektion Trenner Bild 4 --> 
+
+
+          <!-- Main container: Sektion Podcast -->
+       
+        
+        
+        
+         
+        
+
+          
+               
+                
+           
+
+        
+        <!-- Main container End: Sektion Podcast -->
+
+
+
+         <!-- Main container: Sektion Text 4 -->
+        
+        
+        
+        
+        
+        
+        
+
+ 
+            <div id="11" class="container-fluid   bg-white">   
+                  
+                <div class="container"> 
+                   <div><h2>Ergebnisse eines erfolgreichen Strategieworkshops</h2></div>
+                   <div><p><br></p><p>Woran erkennen Sie nun, ob Ihr Strategieworkshop erfolgreich war?&nbsp;</p><p>Ein gut durchgeführter Strategieworkshop nach diesem Ansatz sollte unter anderem folgende Ergebnisse liefern:</p><ul><li>Eine adaptive Vision und Strategie für die nächsten 3-5 Jahre</li><li>Tieferes Verständnis für die neurobiologischen Wirkungen des Unternehmens bzw. einzelner Maßnahmen auf Stakeholder, wobei hierzu sowohl Mitarbeitende als auch Kund:innen, Geschäftspartner und weitere Betroffene zählen</li><li>Identifizierte Erfolgshebel und klare Ziele</li><li>Ein flexibler Aktionsplan&nbsp;</li><li>Gestärkte Teamdynamik und verbesserte Kommunikationsstrukturen</li></ul><p><br></p><div class="row"><div class="col-lg-6 pe-3"><p>Auch hier kann die Neuroampel helfen, die weicheren Faktoren zu messen. So können Sie am Ende des Workshops eine Bestandsaufnahme machen und prüfen, ob bei allen Teilnehmenden die Ampel noch auf grün steht oder ob es Stressoren gibt, die noch geklärt werden müssen. &nbsp;&nbsp;</p></div><div class="col-lg-6 ps-3"><p>Unterschätzen Sie diese Faktoren nicht! Denn was Sie keinesfalls gebrauchen können, ist eine Strategie, an die niemand glaubt oder die schon vor Start der Umsetzung Bauchschmerzen bei einzelnen Beteiligten hervorruft.</p></div></div></div>
+                   
+                </div>
+                
+            </div>
+            
+        
+        
+        
+        
+        
+        
+
+ 
+            <div id="12" class="container-fluid bg-hellgrau  ">   
+                  
+                <div class="container"> 
+                   <div><h2>Häufige Fehler und wie man sie vermeidet</h2></div>
+                   <div><p><br></p><p>Es gibt bestimmte Stolpersteine, die gerade von Anfängern oder Unternehmen gemacht werden, die noch nicht allzu viel Erfahrung mit Strategieworkshops gemacht haben. Aber auch, wenn Sie bereits Strategieworkshops durchgeführt haben, besteht die Gefahr, dass Sie im eigenen Saft schmoren und keine wirklich neuen Gedanken mehr entwickeln. Daher empfehlen wir immer die professionelle Begleitung eines solch wichtigen Events.</p><p>Schauen wir uns die häufigsten Fehler kurz an:<br><br></p><h3>Mangelnde Vorbereitung:&nbsp;</h3><p>Der schlimmste Fehler, den Sie machen können, ist, die Vorbereitung zu unterschätzen. Lassen Sie sich hierfür ausreichend Raum. Investieren Sie Zeit in Einstiegsinterviews, eventuell die Vorbereitung spezieller Umfeldanalysen und maßgeschneiderte Konzeptentwicklung. So schaffen Sie eine gute Basis für einen erfolgreichen Strategieworkshop.<br><br></p><h3>Vernachlässigung der Teamdynamik:&nbsp;</h3><p>Adressieren Sie Kommunikationshürden explizit zu Beginn des Workshops. Dieser Schritt ist wichtig, um überhaupt eine offene Kommunikation zu ermöglichen. Mangelndes Vertrauen unter den Teilnehmenden kann nicht nur das Ergebnis des Strategie-Workshops verhindern, sondern auch eine spätere Umsetzung. Gerade an dieser Stelle ist eine moderierende externe Person sehr hilfreich.<br><br></p><h3>Zu starre Planung:&nbsp;</h3><p>Implementieren Sie von Anfang an Mechanismen zur regelmäßigen Überprüfung und Anpassung der Strategie. Denn wie wir schon mehrfach betont haben, gibt es immer zahlreiche Unwägbarkeiten, die trotz gründlichster Planung und Analyse nicht vorhergesehen werden können.<br><br></p><h3>Fokus nur auf harte Fakten:&nbsp;</h3><p>Wirtschaft ist die Interaktion von Menschen – egal ob innerhalb eines Unternehmens oder an den Schnittstellen zu Kund:innen und Geschäftspartnern. Berücksichtigen Sie daher auch die neurosoziale Ebene und die "Perceived Performance".<br><br></p><h3>Zu seltene Durchführung:&nbsp;</h3><p>Wir empfehlen, mindestens einmal im Jahr einen Strategie-Workshop durchzuführen, um rechtzeitig die richtigen Weichen zu setzen.</p><p><br></p><div class="row"><div class="col-lg-2" style="text-align: center;"><br></div><div class="col-lg-8"><div class="card bg-neuro" style="padding:2em 2em 0em 2em;"><div class="card-body"><p style="text-align: center;"><span style="color: rgb(255, 255, 255);">Kontaktieren Sie uns jetzt, wenn Sie Ihren Strategie-Workshop garantiert zum Erfolg bringen wollen.<br></span></p><p style="color: rgb(255, 255, 255); text-align: center;"><a class="btn btn-secondary" href="/kontakt/" rel="noopener noreferrer" target="_blank">Jetzt beraten lassen</a></p></div></div></div><div class="col-lg-2" style="text-align: center;"><br></div></div></div>
+                   
+                </div>
+                
+            </div>
+            
+        
+        
+        
+        
+        
+        
+
+ 
+            <div id="13" class="container-fluid   bg-white">   
+                  
+                <div class="container"> 
+                   <div><h2><span style="color: rgb(177, 20, 73);">Strategieworkshops mit dem MLI:</span><br>Lassen Sie sich von uns begleiten!</h2></div>
+                   <div><p><br></p><div class="row"><div class="col-lg-6 pe-3"><p>Es gibt viele Gründe, weshalb es sich lohnt, einen Strategie-Workshop gemeinsam mit einem externen Partner durchzuführen. Insbesondere die besondere Expertise sowie der neutrale Blick von außen sprechen dafür. Noch mehr Gründe sprechen dafür, eine so wegweisende Veranstaltung mit dem MLI zu realisieren.</p><p>Sebastian Morgner, Leiter des MLI, gilt als einer der führenden Experten im Bereich Neuroleadership und begeistert die Kund:innen mit seinen ganzheitlichen, innovativen Ansätzen, die immer wieder Faktoren einbeziehen, vor denen sonst häufig die Augen verschlossen werden. &nbsp;&nbsp;</p></div><div class="col-lg-6 ps-3"><p>Seien es so schwierige Themen wie menschliche Emotionen und Verhaltensweisen oder nicht einschätzbare Faktoren wie der Zufall. Statt diese im Wirtschaftsleben häufig missachteten Punkte auszuklammern oder zu ignorieren, werden sie beim MLI proaktiv einbezogen. So entstehen lebendige Strategien, die von allen Betroffenen mitgetragen und verinnerlicht werden und auch noch funktionieren, wenn sich Rahmenbedingungen ändern. Teams werden mit anschaulichen und begeisternden Leitbildern zusammengeschweißt, um alles zu geben, damit die angestrebten Ziele auch erreicht werden.</p></div></div><p><br>Unterstützt wird die Arbeit des MLI von zahlreichen hochkarätigen Beraterinnen und Beratern, die durch Ihre Erfahrungen, Expertise und Einfühlsamkeit allen Herausforderungen gewachsen sind. Schauen Sie sich gerne auf unserer Teamseite um.</p><p>Möglicherweise fragen Sie sich, ob denn ein Strategieworkshop überhaupt für Sie notwendig ist.</p><p>Unsere Meinung ist ganz klar: Jedes Unternehmen sollte einen rollierenden Strategieprozess haben, das heißt, dass es, auch wenn die Strategie einmal formuliert wurde, jedes Jahr einen solchen Workshop durchführt, um sie anzupassen, zu ergänzen und zu reviewen. Aber so einen Strategie -Workshop kann auch für jedes Team, für jeden Bereich ein wichtiger Anlass sein, um mal aus der Flughöhe, aus einer gewissen Vogelperspektive auf sich selber zu schauen und sich die Dynamiken und das Umfeld bewusst zu machen. Das funktioniert auch dann, wenn man noch keinen etablierten Strategieprozess hat.&nbsp;</p><p>Sie sehen: Es lohnt sich, Zeit und Raum für einen Strategie-Workshop zur Verfügung zu stellen. Um so sicherer können Sie Ihr Unternehmensziel in den nächsten Hafen steuern und dabei auch noch die Reise genießen.</p><p><br></p><div class="row"><div class="col-lg-2" style="text-align: center;"><br></div><div class="col-lg-8"><div class="card bg-neuro" style="padding:2em 2em 0em 2em;"><div class="card-body"><p style="text-align: center;"><span style="color: rgb(255, 255, 255);">Gerne begleiten wir Sie dabei!<br></span></p><p style="color: rgb(255, 255, 255); text-align: center;"><a class="btn btn-secondary" href="/kontakt/" rel="noopener noreferrer" target="_blank">Kontaktieren Sie uns hier</a></p></div></div></div><div class="col-lg-2" style="text-align: center;"><br></div></div></div>
+                   
+                </div>
+                
+            </div>
+                    <!-- Main container End: Sektion Text 4 -->
+        <!-- Main container: Sektion FAQs -->
+       
+        
+        
+        
+        
+        
+        
+        
+        
+        
+         
+ 
+            <div class="container-fluid bg-white">     
+                <div class="container"> 
+                  
+                 
+                     
+                     
+                   
+                  
+                                    
+<h2 class="">Strategieworkshop</h2>
+<div class="row pt-5" style="justify-content:flex-start;">
+     <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
+        <div class="faq-card">
+            <h3>Warum sollte mein Unternehmen einen Strategieworkshop durchführen?</h3>
+            <p></p><p>Ein Strategieworkshop hilft Ihrem Unternehmen, den aktuellen Stand zu reflektieren, Chancen und Risiken zu identifizieren und eine klare Strategie für die Zukunft zu entwickeln. So können Sie gezielt auf Veränderungen reagieren und Ihre Ziele besser erreichen.</p><p></p>
+        </div>
+    </div>
+     <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
+        <div class="faq-card">
+            <h3>Was unterscheidet einen Strategieworkshop beim MLI von anderen?</h3>
+            <p></p><p>Unsere Workshops kombinieren klassische Analysetools mit innovativen Neuroleadership-Ansätzen und agilen Methoden. So entsteht eine flexible, zukunftssichere Strategie, die individuell auf Ihr Unternehmen zugeschnitten ist.</p><p></p>
+        </div>
+    </div>
+     <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
+        <div class="faq-card">
+            <h3>Für welche Unternehmensgröße eignen sich Strategieworkshops?</h3>
+            <p></p><p>Strategieworkshops sind für Unternehmen jeder Größe geeignet, egal ob Start-up, Mittelständler oder Großkonzern. Wichtig ist die Bereitschaft, sich auf strategische Veränderungen einzulassen und klare Ziele zu verfolgen.</p><p></p>
+        </div>
+    </div>
+     <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
+        <div class="faq-card">
+            <h3>Wie lange dauert ein Strategieworkshop?</h3>
+            <p></p><p>In der Regel dauert ein Strategieworkshop 1 bis 2 Tage, abhängig von der Komplexität der Themen und der Teilnehmerzahl. Bei umfangreicheren Themen oder einer ersten Strategiefindung können auch längere Workshops sinnvoll sein.</p><p></p>
+        </div>
+    </div>
+     <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
+        <div class="faq-card">
+            <h3>Wie sieht der Ablauf eines Strategieworkshops aus?</h3>
+            <p></p><p>Der Workshop beginnt mit einer Analyse der aktuellen Unternehmenslage und Umfeldfaktoren, gefolgt von der Erarbeitung einer Strategie mit klaren Zielen und Maßnahmen. In einem iterativen Prozess wird die Strategie auf ihre Umsetzungsmöglichkeiten geprüft und konkretisiert.</p><p></p>
+        </div>
+    </div>
+     <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
+        <div class="faq-card">
+            <h3>Wie bereitet sich mein Unternehmen auf einen Strategieworkshop vor?</h3>
+            <p></p><p>Vor dem Workshop führen wir Interviews mit Schlüsselpersonen durch, um die wichtigsten Themen und Herausforderungen zu erfassen. Basierend auf diesen Erkenntnissen entwickeln wir ein maßgeschneidertes Workshop-Konzept.</p><p></p>
+        </div>
+    </div>
+ </div>
+
+<style>
+
+.faq-card{
+    background-color: #ededed;
+    border-radius: 15px;
+    padding: 2em;
+    min-height: 450px;
+    margin: 10px;
+}
+
+
+
+</style>                   
+                                    
+
+                </div>
+                
+            </div> 
+
+        
+        <!-- Main container End: Sektion FAQs -->
+        
+        <ul itemscope="" itemtype="https://schema.org/BreadcrumbList" class="breadcrumb">
+      <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="/">
+            <span itemprop="name" class="rotpink">MLI</span></a>
+        <meta itemprop="position" content="1">
+      </li>
+      ›
+      <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+        <a itemscope="" itemtype="https://schema.org/WebPage" itemprop="item" itemid="strategieworkshop" href="/strategieworkshop/">
+          <span itemprop="name">Strategieworkshop </span></a>
+        <meta itemprop="position" content="2">
+      </li>
+     
+    </ul>
+
+    <style>
+        .breadcrumb{    
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            padding-left: 0;
+            list-style: none;
+            margin-left:10%;
+            margin-top:15px;
+            }
+            .breadcrumb li{     
+            font-size:1em;
+            list-style: none;
+            background-image:none;
+            padding-right:10px;
+            padding-left:10px;
+            }
+            .breadcrumb li::before{   
+                width:0px;
+                height:0px;             
+            background-image:url('')!important;
+            }
+            .breadcrumb li a{     
+            text-decoration:none!important;
+            }
+    </style>        </section>
+        
+        <!-- Footer -->
+        <footer id="layout-footer">
+            <footer>
+    <div class="container-fluid p-5" style="background-color:#666;">
+     <div class="container">
+      <div class="row">
+            <div class="col-lg-4 white">
+               <img src="/storage/app/media/Global/MLI-Logo-web-weiss.webp" style="max-width:250px;" alt="MLI Logo">
+               <p style="font-size:1.2em;"><br>MLI Leadership Institut GmbH<br>Metropolregion München</p><hr><p style="font-size:1.2em;">Mühlstraße 4<br>86911 Dießen am Ammersee<br>Telefon: <a href="tel:+4988072444460" style="font-size:1em;color:#fff;text-decoration:none;">+49 (0)8807 244446-0</a><br>Telefax: +49 (0)8807 244446-9</p><hr><p><a href="mailto:info@leadership-munich.org" style="font-size:1em;color:#fff;">info@leadership-munich.org</a></p>            </div>
+            <div class="col-lg-6 white pt-2">
+               <p class="desktop" style="font-size:1.2em;"><br><br></p><div class="white h3">Say hello</div><p><a class="btn btn-primary" href="/kontakt/" target="_self">Zum Kontaktformular</a></p><hr><div class="white h3 pt-2">Stay with us</div><p><span style="font-size: 18px;">Mit unserem Newsletter bleiben Sie stets auf dem Laufenden – über Neuigkeiten und Hintergründe aus dem MLI zum Thema Leadership &amp; Strategieaktivierung.</span></p><hr><p><a class="btn btn-primary" href="/newsletter/" target="_self">Newsletter abonnieren</a></p><p><br></p>             </div>
+            <div class="col-lg-2 pt-5">
+               <p style="text-align:right;"><br><a href="/impressum/" style="font-size:1em;color:#fff;text-decoration:none;">&nbsp;IMPRESSUM&nbsp;</a><br><a href="/datenschutzerklaerung/" style="font-size:1em;color:#fff;text-decoration:none;">&nbsp;DATENSCHUTZ&nbsp;</a></p>            </div>
+        </div>
+     </div>
+    </div>
+</footer>
+
+<style>
+@media (max-width: 1000px) {
+.desktop{display: none;}
+}
+</style>
+<script type="text/javascript">
+_linkedin_partner_id = "7055746";
+window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script>
+<script type="text/javascript">
+(function(l) {
+if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
+window.lintrk.q=[]}
+var s = document.getElementsByTagName("script")[0];
+var b = document.createElement("script");
+b.type = "text/javascript";b.async = true;
+b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+s.parentNode.insertBefore(b, s);})(window.lintrk);
+</script>
+<noscript>
+<img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=7055746&fmt=gif" />
+</noscript>        </footer>
+
+      <script>
+		
+document.getElementById("top").scrollIntoView();
+
+
+/* OCKER BULLETS */
+
+var pageClass = document.body.classList[1];
+
+var pageId = pageClass.replace('page-', '');
+
+if (pageId === 'agile-strategieumsetzung') {
+
+  var ulElements = document.querySelectorAll('ul');
+
+  for (var i = 0; i < ulElements.length; i++) {
+
+    if (!ulElements[i].classList.contains('navbar-nav') && !ulElements[i].classList.contains('dropdown-menu')) {
+
+      ulElements[i].classList.add('ockerlist');
+    }
+  }
+}
+
+var pageClass = document.body.classList[1];
+
+var pageId = pageClass.replace('page-', '');
+
+if (pageId === 'agile-strategieumsetzung') {
+
+  var olElements = document.querySelectorAll('ol');
+
+  for (var i = 0; i < olElements.length; i++) {
+
+    if (!olElements[i].classList.contains('navbar-nav') && !olElements[i].classList.contains('dropdown-menu')) {
+
+      olElements[i].classList.add('ockerlist');
+    }
+  }
+}
+
+
+/* BLAUGRAU BULLETS */
+
+var pageClass = document.body.classList[1];
+
+var pageId = pageClass.replace('page-', '');
+
+if (pageId === 'leadership-development') {
+
+  var ulElements = document.querySelectorAll('ul');
+
+  for (var i = 0; i < ulElements.length; i++) {
+
+    if (!ulElements[i].classList.contains('navbar-nav') && !ulElements[i].classList.contains('dropdown-menu')) {
+
+      ulElements[i].classList.add('blaugraulist');
+    }
+  }
+}
+
+var pageClass = document.body.classList[1];
+
+var pageId = pageClass.replace('page-', '');
+
+if (pageId === 'leadership-development') {
+
+  var olElements = document.querySelectorAll('ol');
+
+  for (var i = 0; i < olElements.length; i++) {
+
+    if (!olElements[i].classList.contains('navbar-nav') && !olElements[i].classList.contains('dropdown-menu')) {
+
+      olElements[i].classList.add('blaugraulist');
+    }
+  }
+}
+
+
+/* PETROL BULLETS */
+
+var pageClass = document.body.classList[1];
+
+var pageId = pageClass.replace('page-', '');
+
+if (pageId === 'leadership-coaching') {
+
+  var ulElements = document.querySelectorAll('ul');
+
+  for (var i = 0; i < ulElements.length; i++) {
+
+    if (!ulElements[i].classList.contains('navbar-nav') && !ulElements[i].classList.contains('dropdown-menu')) {
+
+      ulElements[i].classList.add('petrollist');
+    }
+  }
+}
+
+var pageClass = document.body.classList[1];
+
+var pageId = pageClass.replace('page-', '');
+
+if (pageId === 'leadership-coaching') {
+
+  var olElements = document.querySelectorAll('ol');
+
+  for (var i = 0; i < olElements.length; i++) {
+
+    if (!olElements[i].classList.contains('navbar-nav') && !olElements[i].classList.contains('dropdown-menu')) {
+
+      olElements[i].classList.add('petrollist');
+    }
+  }
+}
+
+		</script>  
+     
+  <script src="/js/site.js" defer=""></script></body></html>

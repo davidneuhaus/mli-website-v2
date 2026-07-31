@@ -1,0 +1,38 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+  lang?: "de" | "en";
+  canonical?: string;
+}
+const {
+  title,
+  description = "",
+  lang = "de",
+  canonical = Astro.url.pathname,
+} = Astro.props;
+---
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    {description && <meta name="description" content={description} />}
+    <link rel="canonical" href={new URL(canonical, Astro.site).href} />
+    <link rel="icon" type="image/png" href="/themes/mli-sebastian-mogener/assets/images/mli-favicon.png" />
+    <link href="/themes/mli-sebastian-mogener/assets/vendor/bootstrap/bootstrap.css" rel="stylesheet" />
+    <link href="/themes/mli-sebastian-mogener/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="/themes/mli-sebastian-mogener/assets/css/main-min.css" rel="stylesheet" />
+    <link href="/themes/mli-sebastian-mogener/assets/css/layout-2025.css" rel="stylesheet" />
+    <link href="/themes/mli-sebastian-mogener/assets/css/responsive-2025.css" rel="stylesheet" />
+    <script is:inline id="usercentrics-cmp" src="https://web.cmp.usercentrics.eu/ui/loader.js" data-settings-id="0qtDDaIFgHMzAV" async></script>
+    <script is:inline src="/themes/mli-sebastian-mogener/assets/vendor/jquery.min.js"></script>
+    <script is:inline src="/themes/mli-sebastian-mogener/assets/vendor/bootstrap/bootstrap.min.js"></script>
+    <script is:inline src="/themes/mli-sebastian-mogener/assets/js/app.js"></script>
+    <script is:inline src="/js/site.js" defer></script>
+  </head>
+  <body class="home-layout">
+    <slot />
+  </body>
+</html>

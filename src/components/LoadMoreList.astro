@@ -1,0 +1,52 @@
+---
+interface Item {
+  title: string;
+  path: string;
+  description?: string;
+}
+interface Props {
+  items: Item[];
+  pageSize?: number;
+  lang?: "de" | "en";
+}
+const { items, pageSize = 6, lang = "de" } = Astro.props;
+---
+<div class="mli-load-more-root">
+  <div class="row" data-mli-load-list>
+    {
+      items.map((item, i) => (
+        <div class="col-md-6 col-lg-4 mb-4" data-mli-item style={i >= pageSize ? "display:none" : undefined}>
+          <a href={item.path} class="text-decoration-none">
+            <h3 class="h5">{item.title}</h3>
+            {item.description && <p class="small text-muted">{item.description}</p>}
+          </a>
+        </div>
+      ))
+    }
+  </div>
+  {
+    items.length > pageSize && (
+      <div class="text-center my-4">
+        <button type="button" class="btn btn-primary mli-load-more">
+          {lang === "en" ? "Load more" : "Mehr laden"}
+        </button>
+      </div>
+    )
+  }
+</div>
+<script>
+  document.querySelectorAll(".mli-load-more-root").forEach((root) => {
+    const list = root.querySelectorAll("[data-mli-item]");
+    const btn = root.querySelector(".mli-load-more");
+    if (!btn || !list.length) return;
+    let shown = 6;
+    btn.addEventListener("click", () => {
+      const next = shown + 6;
+      list.forEach((el, i) => {
+        if (i < next) (el as HTMLElement).style.display = "";
+      });
+      shown = next;
+      if (shown >= list.length) (btn as HTMLElement).style.display = "none";
+    });
+  });
+</script>

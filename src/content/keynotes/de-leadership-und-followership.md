@@ -1,0 +1,847 @@
+---
+title: ""
+description: ""
+path: "/keynotes-detail-ansicht/leadership-und-followership/"
+lang: "de"
+---
+
+<button class="btn-primary btn backtotop" onclick="window.scrollTo({top: 0, behavior: &quot;smooth&quot;});"><i class="bi bi-arrow-up"></i></button>
+
+<style>
+.backtotop{position:fixed;bottom:80px;right:30px;z-index:99;}
+</style>  
+        
+            <div class="progress" style="z-index:9999999;" id="top"></div>
+<div class="cta-btn bg-rotpink">
+       <div class="cta-btn-cont">
+           <a href="/kontakt/" class="white"> <div class="cta-btn-icon">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+                  <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2H2Zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671Z"></path>
+                  <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034v.21Zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z"></path>
+                </svg>
+            </div></a>
+            <p class="kontakt-btn">
+                </p><p class="cta-text">Kontaktformular</p>
+            <p></p>
+         </div>
+    </div>
+
+
+<div class="linkedin-btn bg-rotpink">
+
+  
+       <div class="linkedin-btn-cont">
+        
+            <a href="https://www.linkedin.com/company/mli-leadership-institut-gmbh-metropolregion-m%C3%BCnchen/" class="white" target="_blank"> <img alt="LinkedIn Logo" class="linkedin-teaser" src="/storage/app/media/Global/LinkedIn_Logo.svg"></a>
+           <p class="linkedin-text">Folgen Sie uns auf LinkedIn</p>
+         </div>
+        
+    </div>
+
+
+<div class="nl-btn bg-rotpink">
+
+  
+      <div class="nl-btn-cont">
+        <div class="nl-btn-icon">
+           <a href="/newsletter/" class="white">  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#ffffff" class="bi bi-mailbox2" viewBox="0 0 16 16">
+            <path d="M9 8.5h2.793l.853.854A.5.5 0 0 0 13 9.5h1a.5.5 0 0 0 .5-.5V8a.5.5 0 0 0-.5-.5H9v1z"></path>
+            <path d="M12 3H4a4 4 0 0 0-4 4v6a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V7a4 4 0 0 0-4-4zM8 7a3.99 3.99 0 0 0-1.354-3H12a3 3 0 0 1 3 3v6H8V7zm-3.415.157C4.42 7.087 4.218 7 4 7c-.218 0-.42.086-.585.157C3.164 7.264 3 7.334 3 7a1 1 0 0 1 2 0c0 .334-.164.264-.415.157z"></path>
+           </svg></a>
+
+            </div>
+          <p class="nl-text">Newsletter bestellen</p>
+         </div>
+        
+    </div>
+
+
+<script>
+/*
+$('.cta-btn').on('mouseover', function () {
+      $('.cta-btn').toggleClass( "cta-btn-open" );
+      $('.linkedin-btn').removeClass( "linkedin-btn-open" );
+      $('.nl-btn').removeClass( "nl-btn-open" );
+    });
+
+$('.linkedin-btn').on('mouseover', function () {
+      $('.linkedin-btn').toggleClass( "linkedin-btn-open" );
+      $('.linkedin-btn-opener').toggleClass( "linkedin-btn-opener-open" );
+      $('.linkedin-text').toggleClass( "linkedin-text-open" );
+      $('.cta-btn').removeClass( "cta-btn-open" );
+      $('.nl-btn').removeClass( "nl-btn-open" );
+    });
+
+$('.nl-btn').on('mouseover', function () {
+      $('.nl-btn').toggleClass( "nl-btn-open" );
+      $('.nl-btn-opener').toggleClass( "nl-btn-opener-open" );
+      $('.nl-text').toggleClass( "nl-text-open" );
+      $('.cta-btn').removeClass( "cta-btn-open" );
+      $('.linkedin-btn').removeClass( "linkedin-btn-open" );
+    });
+
+*/
+
+  
+</script>
+
+<style>
+.cta-btn{
+    opacity:1;
+    position:fixed;
+    top:160px;
+    right:-153px;
+    width:208px;
+    height:57px; 
+    transition: all .5s ease-in;
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+    overflow:hidden;padding:.5em;
+    z-index:999999;
+        cursor:pointer;
+    }
+
+.cta-text{
+    position:absolute;
+    left:60px;
+    top:18px;
+    line-height:1.1em;
+    font-size:1.1em;
+}
+
+.cta-text a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.cta-teaser, .kontakt-btn{margin-top:-40px;margin-left:50px;}
+.cta-btn-open{right:0px;}
+.cta-btn-cont{width:90%;color:#fff;}
+
+.linkedin-btn{
+    position:fixed;
+    top:232px;
+    right:-160px;
+    width: 215px;
+    height: 57px;
+    transition: all .5s ease-in;
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+    overflow:hidden;
+    padding:.5em;
+        cursor:pointer;
+     z-index:999999;
+    }
+
+.linkedin-teaser{
+    width: 40px;
+}
+
+
+
+.linkedin-btn-open{
+    right: 0px;
+}
+
+.linkedin-link{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.linkedin-link:hover{
+    color: #bebebe;
+}
+
+
+
+.linkedin-text{
+    position:absolute;
+    left:60px;
+    top:7px;
+    line-height:1.1em;
+    font-size:1.1em;
+}
+
+.linkedin-text a{
+    color: #ffffff;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.linkedin-text-open{
+    display: block !important;
+}
+
+.linkedin-btn-cont{width:90%;color:#fff;}
+
+.linkedin-btn-position{
+    top: 18vh;
+}
+
+.nl-btn{
+    position:fixed;
+    top:303px;
+    right:-181px;
+    width: 237px;
+    height: 57px;
+    transition: all .5s ease-in;
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+    overflow:hidden;
+    padding:.5em;
+        cursor:pointer;
+     z-index:999999;
+    }
+
+.nl-teaser{
+    width: 40px;
+}
+
+
+
+.nl-btn-open{
+    right: 0px;
+}
+
+.nl-link{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nl-link:hover{
+    color: #bebebe;
+}
+
+
+
+.nl-text{
+    position:absolute;
+    left:60px;
+    top:18px;
+    line-height:1.1em;
+    font-size:1.1em;
+}
+
+.nl-text a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nl-text-open{
+    display: block !important;
+}
+
+.nl-btn-cont{width:90%;color:#fff;}
+
+.nl-btn-position{
+    top: 18vh;
+}
+
+@media (max-width:600px) {
+  .cta-btn{
+      display:none;
+    position:fixed;
+    bottom:0!Important;
+    left:5%;
+    width: 67px;
+    height: 60px;
+    transition: all .5s ease-in;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    overflow:hidden;padding:.5em;
+    z-index:999999;
+        cursor:pointer;
+    }
+
+.cta-text{
+    display:none;
+}
+
+.cta-text a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.cta-teaser, .kontakt-btn{}
+.cta-btn-open{right:0px;}
+.cta-btn-cont{width:90%;color:#fff;}
+
+.linkedin-btn{
+     display:none;
+    position:fixed;
+    bottom:0;
+    left:30%;
+    width: 67px;
+    height: 60px;
+    transition: all .5s ease-in;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    overflow:hidden;
+    padding:.5em;
+        cursor:pointer;
+     z-index:999999;
+    }
+
+.linkedin-teaser{
+    width: 40px;
+}
+
+
+
+.linkedin-btn-open{
+    right: 0px;
+}
+
+.linkedin-link{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.linkedin-link:hover{
+    color: #bebebe;
+}
+
+
+
+.linkedin-text{
+    display:none;
+}
+
+.linkedin-text a{
+    color: #ffffff;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.linkedin-text-open{
+    display: block !important;
+}
+
+.linkedin-btn-cont{width:90%;color:#fff;}
+
+.linkedin-btn-position{
+    
+}
+
+.nl-btn{
+     display:none;
+    position:fixed;
+    bottom:0;
+    left:70%;
+    width: 67px;
+    height: 60px;
+    transition: all .5s ease-in;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    overflow:hidden;
+    padding:.5em;
+        cursor:pointer;
+     z-index:999999;
+    }
+
+.nl-teaser{
+    width: 40px;
+}
+
+
+
+.nl-btn-open{
+    right: 0px;
+}
+
+.nl-link{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nl-link:hover{
+    color: #bebebe;
+}
+
+
+
+.nl-text{
+   display:none;
+}
+
+.nl-text a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nl-text-open{
+    display: block !important;
+}
+
+.nl-btn-cont{width:90%;color:#fff;}
+
+.nl-btn-position{
+   
+}  
+}
+
+
+</style> 
+
+
+<!-- HEADERSLIDER -->
+<div id="eventSlider" class="carousel">
+
+  <div class="carousel-inner">
+       
+    <div class="carousel-item active">
+        <div class="overlay-header" style="z-index:0;"></div>
+                   <img class="d-none d-sm-none d-md-block d-lg-block d-xl-block" src="/storage/app/uploads/public/656/4c0/d0b/6564c0d0b4cd3874742244.webp" style="width:100%;" alt="">
+           <img src="/storage/app/uploads/public/656/4c0/d0b/6564c0d0b5938440100002.webp" style="width:100%;" class="d-block d-sm-block d-md-none d-lg-none d-xl-none" alt="">
+              <div class="carousel-caption d-block d-md-block" data-aos="fade-down" data-aos-easing="ease" data-aos-delay="1000" data-aos-duration="1000">
+         <h1 class="slide-head-top">Leadership und Followership</h1>
+              </div> 
+       
+    </div>
+  </div>
+</div>
+
+<!-- HEADERSLIDER END -->
+    
+
+<div class="container-fluid bg-white" style="padding:50px 10%;">
+<div id="events" class="container relative">
+
+    
+                 <p></p><p>Profitieren Sie von den Erkenntnissen einer Harvard-Legende: Barbara Kellerman, Professorin an der Harvard Kennedy School, hat unzählige Bücher zum Thema Leadership verfasst. In diesem Vortrag berichtet die große Dame des Leadership davon, was ein effektives Führungssystem ausmacht. Der oder die erste Unterstützerin ist für eine starke Bewegung wichtiger als die Führungskräfte selbst.&nbsp;</p><p><br></p><h2>Worum geht es</h2><h2>&nbsp;</h2><p>Menschen in Führungsrollen ist häufig nicht bewusst, dass „Followership“, also freiwilliges und motiviertes Folgen, die zentrale Grundlage für ihre Wirksamkeit ist. Und dass jede Person, die in Führung gehen möchte, auch selbst die Kompetenz benötigt, in den richtigen Situationen als Unterstützer:in aktiv zu werden. Sie beschreibt, was ein effektives Führungssystem ausmacht – gerade im Hinblick auf die Herausforderungen durch die zunehmende Automatisierung und Künstliche Intelligenz.&nbsp;</p><p></p>
+    
+
+</div>
+</div>
+<div class="container-fluid bg-white" style="padding:50px 10%;">
+<div class="container relative">
+
+            
+            <p></p><h2>Die Expertin an Ihrer Seite</h2><p><br></p><div class="row"><div class="col-lg-6 pe-3"><p><br></p><p><img src="/storage/app/media/Team/Querformat/barbara-Kellerman.jpg" style="width: 151px;" class="fr-fic fr-dib fr-fil oc-img-rounded"></p><h3>Barbara Kellerman</h3><p>Barbara Kellerman ist Professorin an der Harvard Kennedy School und eine der führenden Vordenkerinnen im Bereich Leadership.</p><p><a class="btn btn-primary" href="">Download Speakerprofil</a></p></div><div class="col-lg-6 ps-3"><br></div></div><p></p>
+       
+</div>
+</div>
+<div class="container-fluid bg-hellgrau" style="padding:50px 10%;">
+<div class="container relative">
+<article class="flex flex-wrap  md:flex-nowrap ">        
+        <div class="flex-grow prose prose-xl">
+            
+            <p class="mb-2 text-gray-800"></p><h2>Was die Teilnehmenden erwartet</h2><h2>&nbsp;</h2><ul><li>Genießen Sie die Fülle an Wissen und Beispielen einer Harvard-Legende</li><li>Hören Sie aufrüttelnde Hypothesen zum Thema „Führung“, die Sie zu einer kritischen Reflexion Ihres eigenen Führungsverständnisses einladen</li><li>Verstehen Sie Führung als eine relative, auf die Situation und den Kontext bezogene Tätigkeit</li><li>Machen Sie sich bewusst, wie Sie positive Dynamiken und Leistungsorientierung durch Ihr Führungsverhalten prägen können</li></ul><p><br></p><h2>Relevanz für Führungspersonen</h2><p><br></p><p>Führung ist eine soziale Profession, die stark durch gesellschaftliche Entwicklungen und den Zeitgeist geprägt wird. Menschen in Führungsrollen brauchen einen sozialen, systemischen Blick, um die Erfolgshebel ihrer Arbeit zu verstehen und zu voller Wirkung zu kommen. Manchmal ist mutiges Vorangehen nötig, manchmal ist Demut das richtige Mittel. Barbara Kellermann zeigt uns, wie wir richtig mit Macht und Einfluss umgehen. &nbsp;</p><p></p>
+        </div>
+        
+<!--<div class="flex-grow-0">
+            <p class="mb-2 text-gray-800"><i class="bi bi-geo-alt-fill"></i> </p>
+                <div class="flex space-x-2">
+                                <span class="bg-yellow-500 text-xs text-white font-bold rounded px-2 py-1">
+                    keynote
+                </span>
+                                </div>    
+        </div>-->
+</article>
+</div>
+</div>
+
+
+<div id="anmeldung" class="container-fluid relative bg-hellgrau" style="padding: 50px 10%;">
+    <div class="container">
+        <div class="row pb-5">
+            <div class="col-lg-12">
+                
+            </div>
+        </div>
+        
+          
+                                 <h3>Keynoteanfrage stellen<br><br></h3>
+<form data-request="eventanmeldung::onFormSubmit">
+
+    <input name="_token" type="hidden" value="bYUvAw6G1SpgQX8EXhw8X1yF5nwySFRx1wrjgle8">
+
+    <div id="eventanmeldung_forms_flash"></div>
+<div class="row">
+    <div class="col-lg-6" style="padding:0 10px;">
+        <div class="form-group form-floating mb-3">
+            <input type="text" id="name" name="name" class="form-control no-outline" required="">
+            <label for="name">Firma, Name <sup>*</sup></label>
+        </div>
+        <div class="form-group form-floating mb-3">
+            <input type="text" id="phone" name="phone" class="form-control no-outline">
+            <label for="phone">Telefonnummer</label>
+        </div>
+    </div>
+    <div class="col-lg-6" style="padding:0 10px;">
+        <div class="form-group form-floating mb-3">
+            <input type="text" id="email" name="email" class="form-control no-outline" required="">
+            <label for="email">Email <sup>*</sup></label>
+        </div>
+      <!--  <div class="form-group form-floating mb-3">
+            <input type="text" id="adress" name="adress" class="form-control no-outline">
+            <label for="adress">Straße, Ort</label>
+        </div> -->
+    </div>
+</div>
+    <div class="form-group form-floating mb-3">
+        <input type="text" id="subject" name="subject" class="form-control no-outline" value="Anfrage für die Keynote: Leadership und Followership">
+        <label for="subject">Keynote</label>
+    </div>
+     <div class="form-group form-floating mb-3">
+        <textarea id="comments" class="form-control no-outline" name="comments" style="height:125px;" required=""></textarea>
+                  <label for="comments">Nachricht <sup>*</sup></label>
+             </div>
+    <div class="form-group pb-3">
+      <input type="checkbox" name="checkbox" required="">
+      <label for="checkbox">Ich habe die <a href="/datenschutzerklaerung/">Datenschutzerklärung</a> gelesen und verstanden<sup>*</sup></label>
+    </div>
+ <div class="form-group">
+            </div>
+     <button id="simpleContactSubmitButton" type="submit" class="btn btn-primary btn-lg btn-pill no-outline">Anfrage stellen</button>
+</form>
+
+<!--  am  9. November 2023 -->
+                         </div>
+</div>
+
+
+
+
+<style>
+.overlay-header{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(138deg, rgba(0,0,0,0.4) 0%, rgba(255,255,255,0.1) 100%);
+    z-index: 2;
+    }
+.oc-img-rounded{border-radius:100%;}
+
+.faq-card{
+    background-color: #ededed;
+    border-radius: 15px;
+    padding: 2em;
+    min-height: 250px;
+    margin: 10px;
+}
+
+.closer{display: flex;justify-content:center;align-items:center;}
+.closer-content{padding:50px 70px;border-radius:7px;}
+
+.dl-btn:hover{color:#fff!important;}
+
+.eventSMlinks a{font-size:1.5em;}
+
+@media (max-width: 575px){
+ .closer-content {padding: 30px 20px;}   
+ .eventSMlinks a{font-size:2em;}
+}
+
+</style>
+
+
+
+<div class="container-fluid bg-white">
+    <div class="container">
+        
+
+            <div class="row mx-auto my-auto justify-content-center">
+                
+        <div id="CTACarousel" class="carousel slide-fade" data-bs-ride="carousel" data-bs-touch="true" style="overflow: hidden;">
+               
+   
+
+            <div class="carousel-inner" role="listbox">
+                                          <div class="cta-carousel carousel-item active">
+                   <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 ">
+                        <div class="card">
+                          
+                            <div class="card-content white text-center" style="background-image:url('/storage/app/media/Slider-Motive-Mobile/mli-slider-mobile-neurosoziale-fuhrung.webp');background-size:cover;background-position:center;">
+                               <div class="card-content-overlay">
+                                    <a href="/leadership-development-neurosoziale-fuehrung-ein-fachlicher-ratgeber/">
+                                <div class="card-head bg-neuro" style="position:absolute;top:0;left:0;text-align:center;padding:1em;width:100%;">
+                                     <div class="white" style="font-family:'Source SansPro Bold';font-size:1.2em;text-transform:none;hyphens:none;-webkit-hyphens:none;">Neurosoziale Führung</div>
+                                </div>
+                                 <div class="card-text pt-5">
+                                     <p style="font-family:'Source SansPro Regular';hyphens:none!important;-webkit-hyphens:none!important;"></p><p>Für mehr Eigenverantwortung, Motivation, Ergebnisorientierung und Produktivität!</p><p></p>
+                                </div>
+                                </a>
+                                                                <div class="card-link">
+                                   <a href="/leadership-development-neurosoziale-fuehrung-ein-fachlicher-ratgeber/"> <button class="btn btn-primary">Mehr erfahren</button> </a>
+                                </div>
+                               </div>    
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+                                 <div class="cta-carousel carousel-item ">
+                   <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 ">
+                        <div class="card">
+                          
+                            <div class="card-content white text-center" style="background-image:url('/storage/app/media/Slider-Motive-Mobile/MLI-Slider-NLP-mobile.webp');background-size:cover;background-position:center;">
+                               <div class="card-content-overlay">
+                                    <a href="/new-leadership-podcast/">
+                                <div class="card-head bg-neuro" style="position:absolute;top:0;left:0;text-align:center;padding:1em;width:100%;">
+                                     <div class="white" style="font-family:'Source SansPro Bold';font-size:1.2em;text-transform:none;hyphens:none;-webkit-hyphens:none;">MLI New Leadership Podcast</div>
+                                </div>
+                                 <div class="card-text pt-5">
+                                     <p style="font-family:'Source SansPro Regular';hyphens:none!important;-webkit-hyphens:none!important;"></p><p>Inspirierende Gespräche mit Top-Entscheider:innen, Expert:innen und Unternehmer:innen.</p><p></p>
+                                </div>
+                                </a>
+                                                                <div class="card-link">
+                                   <a href="/new-leadership-podcast/"> <button class="btn btn-primary">Hier anhören</button> </a>
+                                </div>
+                               </div>    
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+                                 <div class="cta-carousel carousel-item ">
+                   <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 ">
+                        <div class="card">
+                          
+                            <div class="card-content white text-center" style="background-image:url('/storage/app/media/Buch/Expedition-Zukunft-Front.webp');background-size:cover;background-position:center;">
+                               <div class="card-content-overlay">
+                                    <a href="/ressourcen/">
+                                <div class="card-head bg-neuro" style="position:absolute;top:0;left:0;text-align:center;padding:1em;width:100%;">
+                                     <div class="white" style="font-family:'Source SansPro Bold';font-size:1.2em;text-transform:none;hyphens:none;-webkit-hyphens:none;">Buch Expedition Zukunft</div>
+                                </div>
+                                 <div class="card-text pt-5">
+                                     <p style="font-family:'Source SansPro Regular';hyphens:none!important;-webkit-hyphens:none!important;"></p><p>Der MLI-Führungsansatz in einem Buch – alles, was Sie über Strategieaktivierung wissen sollten.</p><p></p>
+                                </div>
+                                </a>
+                                                                <div class="card-link">
+                                   <a href="/ressourcen/"> <button class="btn btn-primary">Mehr erfahren</button> </a>
+                                </div>
+                               </div>    
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+                                 <div class="cta-carousel carousel-item ">
+                   <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 ">
+                        <div class="card">
+                          
+                            <div class="card-content white text-center" style="background-image:url('/storage/app/media/Ansprechpartner/team.webp');background-size:cover;background-position:center;">
+                               <div class="card-content-overlay">
+                                    <a href="/leadership-sprints-mit-okr/">
+                                <div class="card-head bg-neuro" style="position:absolute;top:0;left:0;text-align:center;padding:1em;width:100%;">
+                                     <div class="white" style="font-family:'Source SansPro Bold';font-size:1.2em;text-transform:none;hyphens:none;-webkit-hyphens:none;">Fallstudie</div>
+                                </div>
+                                 <div class="card-text pt-5">
+                                     <p style="font-family:'Source SansPro Regular';hyphens:none!important;-webkit-hyphens:none!important;"></p><p>Wollen Sie mehr darüber erfahren, warum agile Leadership Sprints und OKR der beste Weg für eine erfolgreiche Strategieumsetzung sind?</p><p></p>
+                                </div>
+                                </a>
+                                                                <div class="card-link">
+                                   <a href="/leadership-sprints-mit-okr/"> <button class="btn btn-primary">Zum Blog Artikel</button> </a>
+                                </div>
+                               </div>    
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+                                 <div class="cta-carousel carousel-item ">
+                   <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 ">
+                        <div class="card">
+                          
+                            <div class="card-content white text-center" style="background-image:url('/storage/app/media/Slider-Motive-Mobile/CTA-Slider-Coaching.webp');background-size:cover;background-position:center;">
+                               <div class="card-content-overlay">
+                                    <a href="/strategieworkshop">
+                                <div class="card-head bg-neuro" style="position:absolute;top:0;left:0;text-align:center;padding:1em;width:100%;">
+                                     <div class="white" style="font-family:'Source SansPro Bold';font-size:1.2em;text-transform:none;hyphens:none;-webkit-hyphens:none;">Strategieworkshops</div>
+                                </div>
+                                 <div class="card-text pt-5">
+                                     <p style="font-family:'Source SansPro Regular';hyphens:none!important;-webkit-hyphens:none!important;"></p><p>Strategien lebendig machen: Vom Konzept zur Umsetzung!</p><p></p>
+                                </div>
+                                </a>
+                                                                <div class="card-link">
+                                   <a href="/strategieworkshop"> <button class="btn btn-primary">Mehr erfahren</button> </a>
+                                </div>
+                               </div>    
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+                                            </div>
+          <a class="carousel-control-prev bg-transparent w-aut" href="#CTACarousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next bg-transparent w-aut" href="#CTACarousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+        </div>
+<style>
+   
+    
+  #CTACarousel a{text-decoration:none;color:#fff!important;}
+    
+    #CTACarousel .ctaBtn{background-color:#ccc;height:7px;width:33.3%;margin:auto;border-radius:3px;margin-top:10px;z-index:11;cursor:pointer;}
+    
+    #CTACarousel .card-info-img-fli{position:absolute;left:0px;bottom:-6px;height:70px;}
+    #CTACarousel .card-info-img-fli img{height:70px;}
+       #CTACarousel .card-head-fli{}
+     #CTACarousel .card-text-fli{hyphens:none!important;-webkit-hyphens:none!important;padding:0em!important;background-color:rgba(0,0,0,.2);color:#fff;border-radius:10px;position:static;bottom:100px;}
+    
+    .podcast-overlay{
+    background: rgba(0,0,0,0.53) !important;
+    }
+    
+    /* SWIPER CTA */
+
+ #CTACarousel.element-cta{height:95px;overflow:hidden;z-index:9;}
+
+ #CTACarousel .carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start {
+  transform: translateX(0);
+}
+
+ #CTACarousel .card-content{padding:1.5em 2em;background-color:rgba(255,255,255,.2);margin:2em;min-height:300px;overflow:hidden; }
+ #CTACarousel .card-content-overlay{
+        position:absolute; top:0;left:0;width:100%;height:100%;padding:2em;
+        background: linear-gradient(122deg, rgba(0,0,0,.9) 0%, rgba(150,0,56,.6) 100%);
+       
+}
+ #CTACarousel .card-content h3{font-size:1.2em;font-weight:900;}
+ #CTACarousel .card-content p{font-size:1.2em;font-weight:700;}
+ #CTACarousel .card-text{hyphens:none!important;-webkit-hyphens:none!important;}
+
+  #CTACarousel .carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+.carousel-control-next,
+.carousel-control-prev {width:25px!important;}
+
+ #CTACarousel .card {
+    background-color: transparent;
+    border:none;
+    min-height:450px;
+    overflow:hidden;
+}
+
+ #CTACarousel .card-link {
+    text-align: center;
+    position: absolute;
+    bottom:0;
+    width:92%;
+    height:4em;
+    display:flex;
+    justify-content: right;
+}
+
+ #CTACarousel .card-link a button {
+   height:4em;
+   border-top-left-radius:15px;
+   border-top-right-radius:0px;
+   border-bottom-right-radius: 0px;
+   border-bottom-left-radius: 0px;
+   padding-left: 2em;
+   padding-right: 2em;
+   text-transform: uppercase;
+}
+
+ #CTACarousel .card-link a button:hover {
+  background-color:#ccc;
+ }
+
+ #CTACarousel .card-info-img{width:100%;overflow:hidden;border-radius:5px;}
+ #CTACarousel .card-info-img img{max-width:100%;}
+
+
+
+@media (max-width: 767px){
+    
+    #CTACarousel .card-content {
+    
+    background-color: rgba(255,255,255,.2);
+    margin: 0;
+    min-height: inherit;
+}
+
+#CTACarousel .card-link {
+    bottom: 0 !important;
+}
+    
+}
+
+
+/* SWIPER CTA END */
+    
+    
+</style>
+
+
+<script>
+
+
+
+let ctaelements = document.querySelectorAll('.carousel .cta-carousel')
+
+ctaelements.forEach((el) => {
+    const minPerSlide = 4
+    let next = el.nextElementSibling
+    for (var i=1; i<minPerSlide; i++) {
+        if (!next) {
+            // wrap carousel by using first child
+        	next = ctaelements[0]
+      	}
+        let cloneChild = next.cloneNode(true)
+        el.appendChild(cloneChild.children[0])
+        next = next.nextElementSibling
+    }
+});
+
+
+
+</script>    </div>
+</div>
+</div>
+
+<style>
+#mliSliBtnPrev, #mliSliBtnNext {
+    display:none;
+}
+</style>            <ul itemscope="" itemtype="https://schema.org/BreadcrumbList" class="breadcrumb">
+      <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="/">
+            <span itemprop="name" class="rotpink">MLI</span></a>
+        <meta itemprop="position" content="1">
+      </li>
+      ›
+      <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+        <a itemscope="" itemtype="https://schema.org/WebPage" itemprop="item" itemid="keynotes-detail-ansicht" href="/keynotes-detail-ansicht/leadership-und-followership/">
+          <span itemprop="name">Keynotes Detail Ansicht </span></a>
+        <meta itemprop="position" content="2">
+      </li>
+     
+    </ul>
+
+    <style>
+        .breadcrumb{    
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            padding-left: 0;
+            list-style: none;
+            margin-left:10%;
+            margin-top:15px;
+            }
+            .breadcrumb li{     
+            font-size:1em;
+            list-style: none;
+            background-image:none;
+            padding-right:10px;
+            padding-left:10px;
+            }
+            .breadcrumb li::before{   
+                width:0px;
+                height:0px;             
+            background-image:url('')!important;
+            }
+            .breadcrumb li a{     
+            text-decoration:none!important;
+            }
+    </style>

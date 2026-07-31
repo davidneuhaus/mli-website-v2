@@ -1,0 +1,20 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import LoadMoreList from "../components/LoadMoreList.astro";
+import index from "../data/collections-index.json";
+
+const deStories = index.stories.filter((s) => s.lang === "de");
+const deKeynotes = index.keynotes.filter((s) => s.lang === "de");
+---
+<BaseLayout title="Collections Preview | MLI" description="Internal preview of content collections">
+  <main class="container py-5" style="margin-top:5rem;">
+    <h1>Content collections (preview)</h1>
+    <p class="text-muted">Editable sources live in <code>src/content/stories</code> and <code>src/content/keynotes</code>. Live routes are the static pages under <code>public/</code>.</p>
+
+    <h2 class="mt-5">Leadership Stories ({deStories.length})</h2>
+    <LoadMoreList items={deStories} lang="de" />
+
+    <h2 class="mt-5">Keynotes ({deKeynotes.length})</h2>
+    <LoadMoreList items={deKeynotes} lang="de" />
+  </main>
+</BaseLayout>

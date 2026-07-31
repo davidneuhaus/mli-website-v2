@@ -1,0 +1,23 @@
+---
+/**
+ * Temporary CleverReach newsletter forms (kept from live site).
+ * Confirm final provider with stakeholder before launch.
+ */
+interface Props {
+  lang?: "de" | "en";
+}
+const { lang = "de" } = Astro.props;
+const action = "https://eu2.cleverreach.com/f/298124-389075/wcs/";
+---
+<form class="mli-newsletter-form" action={action} method="post" target="_blank">
+  <div class="form-group form-floating mb-3">
+    <input type="email" name="email" id="cr-email" class="form-control" required autocomplete="email" />
+    <label for="cr-email">Email <sup>*</sup></label>
+  </div>
+  <button type="submit" class="btn btn-primary">
+    {lang === "en" ? "Subscribe" : "Newsletter abonnieren"}
+  </button>
+  <p class="small text-muted mt-2 mb-0">
+    Powered by CleverReach — final newsletter provider TBD before launch.
+  </p>
+</form>

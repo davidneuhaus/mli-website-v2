@@ -1,0 +1,21 @@
+{
+  "name": "mli-website",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "build": "npm run generate && astro build",
+    "preview": "astro preview",
+    "export:site": "node scripts/export-site.mjs",
+    "generate:pages": "node scripts/generate-pages.mjs",
+    "generate:collections": "node scripts/generate-collections.mjs",
+    "fetch:missing": "node scripts/fetch-missing-assets.mjs",
+    "patch:keynotes": "node scripts/patch-keynotes-list.mjs",
+    "generate": "npm run generate:pages && npm run generate:collections && npm run fetch:missing && npm run patch:keynotes"
+  },
+  "dependencies": {
+    "astro": "^5.12.0",
+    "cheerio": "^1.1.0"
+  }
+}

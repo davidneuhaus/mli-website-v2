@@ -1,0 +1,768 @@
+{
+  "brokenAssets": [
+    {
+      "p": "/",
+      "count": 3,
+      "broken": [
+        {
+          "a": "/storage/app/media/Video/videos-2025/MLI_Website_Intro.webp",
+          "st": 404
+        },
+        {
+          "a": "/storage/app/media/Video/videos-2025/MAS_MLI_Website_Intro_16-9_4K_1.webm",
+          "st": 404
+        },
+        {
+          "a": "/storage/app/media/Global/flagge-EN.jpg",
+          "st": 404
+        }
+      ]
+    },
+    {
+      "p": "/stark-in-fuehrung/",
+      "count": 4,
+      "broken": [
+        {
+          "a": "/storage/app/media/Video/videos-2025/MLI_Website_Stark_in_Fuehrung.webp",
+          "st": 404
+        },
+        {
+          "a": "/storage/app/media/Video/videos-2025/masmliwebsitestarkinfuhrung16-9hd1.webm",
+          "st": 404
+        },
+        {
+          "a": "/storage/app/media/Global/flagge-EN.jpg",
+          "st": 404
+        },
+        {
+          "a": "/storage/app/media/Trenner-Motive-allgemein/MIL-Idea-Hack.webp",
+          "st": 404
+        }
+      ]
+    },
+    {
+      "p": "/strategieaktivierung/",
+      "count": 5,
+      "broken": [
+        {
+          "a": "/storage/app/media/Video/videos-2025/MLI_Website_Strategieaktivierung.webp",
+          "st": 404
+        },
+        {
+          "a": "/storage/app/media/Video/videos-2025/MAS_MLI_Website_Strategieaktivierung_16-9_4K_1.webm",
+          "st": 404
+        },
+        {
+          "a": "/storage/app/media/Video/poster-warum-strategieaktivierung-poster.jpg",
+          "st": 404
+        },
+        {
+          "a": "/storage/app/media/Video/Warum%20Strategie%20Aktivierung.mp4",
+          "st": 404
+        },
+        {
+          "a": "/storage/app/media/Global/flagge-EN.jpg",
+          "st": 404
+        }
+      ]
+    },
+    {
+      "p": "/leadership-development/",
+      "count": 1,
+      "broken": [
+        {
+          "a": "/storage/app/media/Global/flagge-EN.jpg",
+          "st": 404
+        }
+      ]
+    },
+    {
+      "p": "/leadership-coaching-2025/",
+      "count": 3,
+      "broken": [
+        {
+          "a": "/storage/app/media/Video/videos-2025/MLI_Website_Intro.webp",
+          "st": 404
+        },
+        {
+          "a": "/storage/app/media/Video/videos-2025/MAS_MLI_Website_Intro_16-9_4K_1.webm",
+          "st": 404
+        },
+        {
+          "a": "/storage/app/media/Global/flagge-EN.jpg",
+          "st": 404
+        }
+      ]
+    },
+    {
+      "p": "/leitbild-und-strategieentwicklung/",
+      "count": 1,
+      "broken": [
+        {
+          "a": "/storage/app/media/Global/flagge-EN.jpg",
+          "st": 404
+        }
+      ]
+    },
+    {
+      "p": "/unser-anspruch/",
+      "count": 1,
+      "broken": [
+        {
+          "a": "/storage/app/media/Global/flagge-EN.jpg",
+          "st": 404
+        }
+      ]
+    },
+    {
+      "p": "/team/",
+      "count": 5,
+      "broken": [
+        {
+          "a": "/combine/cbd4ea45bae827631b2821c78a1b01ed-1756906216",
+          "st": 404
+        },
+        {
+          "a": "/combine/dd339eac245f5069a501929b9342000c-1756906211",
+          "st": 404
+        },
+        {
+          "a": "/storage/app/media/Global/flagge-EN.jpg",
+          "st": 404
+        },
+        {
+          "a": "/storage/app/media/Global/Hintergrund/Animation/Animation-2.svg",
+          "st": 404
+        },
+        {
+          "a": "/storage/app/media/Team/x-button.svg",
+          "st": 404
+        }
+      ]
+    },
+    {
+      "p": "/arbeiten-beim-mli/",
+      "count": 1,
+      "broken": [
+        {
+          "a": "/storage/app/media/Global/flagge-EN.jpg",
+          "st": 404
+        }
+      ]
+    },
+    {
+      "p": "/podcast-2025/",
+      "count": 1,
+      "broken": [
+        {
+          "a": "/storage/app/media/Global/flagge-EN.jpg",
+          "st": 404
+        }
+      ]
+    },
+    {
+      "p": "/keynotes-und-speaker/",
+      "count": 3,
+      "broken": [
+        {
+          "a": "/storage/app/media/Global/flagge-EN.jpg",
+          "st": 404
+        },
+        {
+          "a": "/storage/app/media/Global/Hintergrund/Animation/Animation-2.svg",
+          "st": 404
+        },
+        {
+          "a": "/storage/app/media/Team/x-button.svg",
+          "st": 404
+        }
+      ]
+    },
+    {
+      "p": "/leadership-know-how/",
+      "count": 1,
+      "broken": [
+        {
+          "a": "/storage/app/media/Global/flagge-EN.jpg",
+          "st": 404
+        }
+      ]
+    },
+    {
+      "p": "/leadership-stories/",
+      "count": 4,
+      "broken": [
+        {
+          "a": "/storage/app/media/Global/flagge-EN.jpg",
+          "st": 404
+        },
+        {
+          "a": "/storage/app/media/Blogthemen/GenZ%20und%20F%C3%BChrung%20Miss%20Germany%202023%20Kira%20Geiss%20und%20Sebastian%20Morgner/genz-und-fuhrung-mobile.webp",
+          "st": 404
+        },
+        {
+          "a": "/storage/app/media/Blogthemen/Zolar%20-%20Sarah%20M%C3%BCller/zolar_teaser_logo.webp",
+          "st": 404
+        },
+        {
+          "a": "/storage/app/media/Blogthemen/Joe Kaeser Siemens/siemens-logo.webp",
+          "st": 404
+        }
+      ]
+    },
+    {
+      "p": "/ressourcen/",
+      "count": 3,
+      "broken": [
+        {
+          "a": "/storage/app/media/Video/Poster-Frames/STRATEGYme-Thumbnail.jpg",
+          "st": 404
+        },
+        {
+          "a": "/storage/app/media/Video/STRATEGYme.mp4",
+          "st": 404
+        },
+        {
+          "a": "/storage/app/media/Global/flagge-EN.jpg",
+          "st": 404
+        }
+      ]
+    },
+    {
+      "p": "/fortbildungen-events-2025/",
+      "count": 1,
+      "broken": [
+        {
+          "a": "/storage/app/media/Global/flagge-EN.jpg",
+          "st": 404
+        }
+      ]
+    },
+    {
+      "p": "/kontakt/",
+      "count": 2,
+      "broken": [
+        {
+          "a": "/storage/app/media/Global/flagge-EN.jpg",
+          "st": 404
+        },
+        {
+          "a": "/storage/app/media",
+          "st": 404
+        }
+      ]
+    },
+    {
+      "p": "/newsletter/",
+      "count": 1,
+      "broken": [
+        {
+          "a": "/storage/app/media/Global/flagge-EN.jpg",
+          "st": 404
+        }
+      ]
+    },
+    {
+      "p": "/impressum/",
+      "count": 1,
+      "broken": [
+        {
+          "a": "/storage/app/media/Global/flagge-EN.jpg",
+          "st": 404
+        }
+      ]
+    },
+    {
+      "p": "/datenschutzerklaerung/",
+      "count": 1,
+      "broken": [
+        {
+          "a": "/storage/app/media/Global/flagge-EN.jpg",
+          "st": 404
+        }
+      ]
+    },
+    {
+      "p": "/en/",
+      "count": 3,
+      "broken": [
+        {
+          "a": "/storage/app/media/Video/videos-2025/en/1.png",
+          "st": 404
+        },
+        {
+          "a": "/storage/app/media/Video/videos-2025/en/MAS_MLI_Website_Intro_16-9_4K_english_sub2_1_1.webm",
+          "st": 404
+        },
+        {
+          "a": "/storage/app/media/Global/flagge-DE.jpg",
+          "st": 404
+        }
+      ]
+    },
+    {
+      "p": "/en/contact/",
+      "count": 2,
+      "broken": [
+        {
+          "a": "/storage/app/media/Global/flagge-DE.jpg",
+          "st": 404
+        },
+        {
+          "a": "/storage/app/media",
+          "st": 404
+        }
+      ]
+    },
+    {
+      "p": "/en/team/",
+      "count": 5,
+      "broken": [
+        {
+          "a": "/combine/cbd4ea45bae827631b2821c78a1b01ed-1756906216",
+          "st": 404
+        },
+        {
+          "a": "/combine/dd339eac245f5069a501929b9342000c-1756906211",
+          "st": 404
+        },
+        {
+          "a": "/storage/app/media/Global/flagge-DE.jpg",
+          "st": 404
+        },
+        {
+          "a": "/storage/app/media/Global/Hintergrund/Animation/Animation-2.svg",
+          "st": 404
+        },
+        {
+          "a": "/storage/app/media/Team/x-button.svg",
+          "st": 404
+        }
+      ]
+    },
+    {
+      "p": "/en/strong-in-leadership/",
+      "count": 4,
+      "broken": [
+        {
+          "a": "/storage/app/media/Video/videos-2025/en/3.png",
+          "st": 404
+        },
+        {
+          "a": "/storage/app/media/Video/videos-2025/en/masmliwebsitestarkinfuhrung16-94kenglishsub11.webm",
+          "st": 404
+        },
+        {
+          "a": "/storage/app/media/Global/flagge-DE.jpg",
+          "st": 404
+        },
+        {
+          "a": "/storage/app/media/Trenner-Motive-allgemein/MIL-Idea-Hack.webp",
+          "st": 404
+        }
+      ]
+    },
+    {
+      "p": "/leadership-stories/interview-mit-jimmy-wales-video/",
+      "count": 2,
+      "broken": [
+        {
+          "a": "/storage/app/media/Global/flagge-EN.jpg",
+          "st": 404
+        },
+        {
+          "a": "/storage/app/media/Blogthemen/GenZ%20und%20F%C3%BChrung%20Miss%20Germany%202023%20Kira%20Geiss%20und%20Sebastian%20Morgner/genz-und-fuhrung-mobile.webp",
+          "st": 404
+        }
+      ]
+    },
+    {
+      "p": "/keynotes-detail-ansicht/expedition-zukunft-abenteuer-transformation/",
+      "count": 7,
+      "broken": [
+        {
+          "a": "/plugins/moonwalkerz/events/assets/leaflet/leaflet.css",
+          "st": 404
+        },
+        {
+          "a": "/plugins/moonwalkerz/events/assets/leaflet-routing-machine/leaflet-routing-machine.css",
+          "st": 404
+        },
+        {
+          "a": "/plugins/moonwalkerz/events/assets/leaflet-control-geocoder/Control.Geocoder.css",
+          "st": 404
+        },
+        {
+          "a": "/plugins/moonwalkerz/events/assets/leaflet/leaflet.js",
+          "st": 404
+        },
+        {
+          "a": "/plugins/moonwalkerz/events/assets/leaflet-routing-machine/leaflet-routing-machine.js",
+          "st": 404
+        },
+        {
+          "a": "/plugins/moonwalkerz/events/assets/leaflet-control-geocoder/Control.Geocoder.min.js",
+          "st": 404
+        },
+        {
+          "a": "/storage/app/media/Global/flagge-EN.jpg",
+          "st": 404
+        }
+      ]
+    }
+  ],
+  "titleMismatches": [],
+  "structural": [
+    {
+      "p": "/",
+      "local": 200,
+      "live": 200,
+      "nav": true,
+      "footer": true,
+      "uc": true,
+      "october": false,
+      "imgs": 40,
+      "liveImgs": 40,
+      "contactForm": null,
+      "carousel": 2,
+      "jquery": true
+    },
+    {
+      "p": "/stark-in-fuehrung/",
+      "local": 200,
+      "live": 200,
+      "nav": true,
+      "footer": true,
+      "uc": true,
+      "october": false,
+      "imgs": 4,
+      "liveImgs": 4,
+      "contactForm": null,
+      "carousel": 0,
+      "jquery": true
+    },
+    {
+      "p": "/strategieaktivierung/",
+      "local": 200,
+      "live": 200,
+      "nav": true,
+      "footer": true,
+      "uc": true,
+      "october": false,
+      "imgs": 24,
+      "liveImgs": 24,
+      "contactForm": null,
+      "carousel": 1,
+      "jquery": true
+    },
+    {
+      "p": "/leadership-development/",
+      "local": 200,
+      "live": 200,
+      "nav": true,
+      "footer": true,
+      "uc": true,
+      "october": false,
+      "imgs": 29,
+      "liveImgs": 29,
+      "contactForm": null,
+      "carousel": 1,
+      "jquery": true
+    },
+    {
+      "p": "/leadership-coaching-2025/",
+      "local": 200,
+      "live": 200,
+      "nav": true,
+      "footer": true,
+      "uc": true,
+      "october": false,
+      "imgs": 30,
+      "liveImgs": 30,
+      "contactForm": null,
+      "carousel": 1,
+      "jquery": true
+    },
+    {
+      "p": "/leitbild-und-strategieentwicklung/",
+      "local": 200,
+      "live": 200,
+      "nav": true,
+      "footer": true,
+      "uc": true,
+      "october": false,
+      "imgs": 24,
+      "liveImgs": 24,
+      "contactForm": null,
+      "carousel": 1,
+      "jquery": true
+    },
+    {
+      "p": "/unser-anspruch/",
+      "local": 200,
+      "live": 200,
+      "nav": true,
+      "footer": true,
+      "uc": true,
+      "october": false,
+      "imgs": 12,
+      "liveImgs": 12,
+      "contactForm": null,
+      "carousel": 1,
+      "jquery": true
+    },
+    {
+      "p": "/team/",
+      "local": 200,
+      "live": 200,
+      "nav": true,
+      "footer": true,
+      "uc": true,
+      "october": false,
+      "imgs": 44,
+      "liveImgs": 44,
+      "contactForm": null,
+      "carousel": 1,
+      "jquery": true
+    },
+    {
+      "p": "/arbeiten-beim-mli/",
+      "local": 200,
+      "live": 200,
+      "nav": true,
+      "footer": true,
+      "uc": true,
+      "october": false,
+      "imgs": 5,
+      "liveImgs": 5,
+      "contactForm": null,
+      "carousel": 1,
+      "jquery": true
+    },
+    {
+      "p": "/podcast-2025/",
+      "local": 200,
+      "live": 200,
+      "nav": true,
+      "footer": true,
+      "uc": true,
+      "october": false,
+      "imgs": 13,
+      "liveImgs": 13,
+      "contactForm": null,
+      "carousel": 1,
+      "jquery": true
+    },
+    {
+      "p": "/keynotes-und-speaker/",
+      "local": 200,
+      "live": 200,
+      "nav": true,
+      "footer": true,
+      "uc": true,
+      "october": false,
+      "imgs": 5,
+      "liveImgs": 5,
+      "contactForm": null,
+      "carousel": 1,
+      "jquery": true
+    },
+    {
+      "p": "/leadership-know-how/",
+      "local": 200,
+      "live": 200,
+      "nav": true,
+      "footer": true,
+      "uc": true,
+      "october": false,
+      "imgs": 4,
+      "liveImgs": 4,
+      "contactForm": null,
+      "carousel": 1,
+      "jquery": true
+    },
+    {
+      "p": "/leadership-stories/",
+      "local": 200,
+      "live": 200,
+      "nav": true,
+      "footer": true,
+      "uc": true,
+      "october": false,
+      "imgs": 5,
+      "liveImgs": 5,
+      "contactForm": null,
+      "carousel": 1,
+      "jquery": true
+    },
+    {
+      "p": "/ressourcen/",
+      "local": 200,
+      "live": 200,
+      "nav": true,
+      "footer": true,
+      "uc": true,
+      "october": false,
+      "imgs": 9,
+      "liveImgs": 9,
+      "contactForm": null,
+      "carousel": 1,
+      "jquery": true
+    },
+    {
+      "p": "/fortbildungen-events-2025/",
+      "local": 200,
+      "live": 200,
+      "nav": true,
+      "footer": true,
+      "uc": true,
+      "october": false,
+      "imgs": 5,
+      "liveImgs": 5,
+      "contactForm": null,
+      "carousel": 0,
+      "jquery": true
+    },
+    {
+      "p": "/kontakt/",
+      "local": 200,
+      "live": 200,
+      "nav": true,
+      "footer": true,
+      "uc": true,
+      "october": false,
+      "imgs": 3,
+      "liveImgs": 3,
+      "contactForm": 1,
+      "carousel": 1,
+      "jquery": true
+    },
+    {
+      "p": "/newsletter/",
+      "local": 200,
+      "live": 200,
+      "nav": true,
+      "footer": true,
+      "uc": true,
+      "october": false,
+      "imgs": 4,
+      "liveImgs": 4,
+      "contactForm": null,
+      "carousel": 0,
+      "jquery": true
+    },
+    {
+      "p": "/impressum/",
+      "local": 200,
+      "live": 200,
+      "nav": true,
+      "footer": true,
+      "uc": true,
+      "october": false,
+      "imgs": 2,
+      "liveImgs": 2,
+      "contactForm": null,
+      "carousel": 0,
+      "jquery": true
+    },
+    {
+      "p": "/datenschutzerklaerung/",
+      "local": 200,
+      "live": 200,
+      "nav": true,
+      "footer": true,
+      "uc": true,
+      "october": false,
+      "imgs": 2,
+      "liveImgs": 2,
+      "contactForm": null,
+      "carousel": 0,
+      "jquery": true
+    },
+    {
+      "p": "/en/",
+      "local": 200,
+      "live": 200,
+      "nav": true,
+      "footer": true,
+      "uc": true,
+      "october": false,
+      "imgs": 37,
+      "liveImgs": 37,
+      "contactForm": null,
+      "carousel": 2,
+      "jquery": true
+    },
+    {
+      "p": "/en/contact/",
+      "local": 200,
+      "live": 200,
+      "nav": true,
+      "footer": true,
+      "uc": true,
+      "october": false,
+      "imgs": 3,
+      "liveImgs": 3,
+      "contactForm": 1,
+      "carousel": 1,
+      "jquery": true
+    },
+    {
+      "p": "/en/team/",
+      "local": 200,
+      "live": 200,
+      "nav": true,
+      "footer": true,
+      "uc": true,
+      "october": false,
+      "imgs": 44,
+      "liveImgs": 44,
+      "contactForm": null,
+      "carousel": 1,
+      "jquery": true
+    },
+    {
+      "p": "/en/strong-in-leadership/",
+      "local": 200,
+      "live": 200,
+      "nav": true,
+      "footer": true,
+      "uc": true,
+      "october": false,
+      "imgs": 4,
+      "liveImgs": 4,
+      "contactForm": null,
+      "carousel": 0,
+      "jquery": true
+    },
+    {
+      "p": "/leadership-stories/interview-mit-jimmy-wales-video/",
+      "local": 200,
+      "live": 200,
+      "nav": true,
+      "footer": true,
+      "uc": true,
+      "october": false,
+      "imgs": 5,
+      "liveImgs": 5,
+      "contactForm": null,
+      "carousel": 1,
+      "jquery": true
+    },
+    {
+      "p": "/keynotes-detail-ansicht/expedition-zukunft-abenteuer-transformation/",
+      "local": 200,
+      "live": 200,
+      "nav": true,
+      "footer": true,
+      "uc": true,
+      "october": false,
+      "imgs": 6,
+      "liveImgs": 6,
+      "contactForm": null,
+      "carousel": 2,
+      "jquery": true
+    }
+  ],
+  "allFails": []
+}

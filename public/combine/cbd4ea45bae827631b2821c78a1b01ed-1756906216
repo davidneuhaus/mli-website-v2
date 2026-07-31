@@ -1,0 +1,7 @@
+.block-team-leaders{position:relative}
+.block-team-leaders .team-leaders{white-space:nowrap}
+.block-team-leaders .team-leaders .slick-list{padding:30px;margin-top:-30px;margin-bottom:-30px;margin-left:-30px;margin-right:-30px}
+.block-team-leaders .team-leaders .slick-arrow{display:none !important}
+.block-team-leaders .team-leaders .team-member-container{padding:0 15px}
+.block-team-leaders .team-leaders .team-member-container .team-member{white-space:normal}
+.block-team-leaders .team-leaders .slick-dots li.slick-active button:before{font-size:10px}
