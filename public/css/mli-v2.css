@@ -174,7 +174,10 @@ body.mli-v2 .flagEN > .nav-link {
     max-height: 100vh !important;
     margin: 0 !important;
     padding: 5.5rem 1.25rem 2rem !important;
-    background: #fff !important;
+    background: #ffffff !important;
+    background-image: none !important;
+    color: #2a2a2a !important;
+    opacity: 1 !important;
     z-index: 99995;
     overflow-y: auto;
     overflow-x: hidden;
@@ -202,13 +205,55 @@ body.mli-v2 .flagEN > .nav-link {
     align-items: stretch;
   }
 
-  body.mli-v2 .nav-item {
+  /* Desktop color chips (bg-petrol etc.) break contrast in the white drawer */
+  body.mli-v2 .navbar-collapse .nav-item,
+  body.mli-v2 .navbar-collapse .nav-item.bg-petrol,
+  body.mli-v2 .navbar-collapse .nav-item.bg-rotpink,
+  body.mli-v2 .navbar-collapse .nav-item.bg-blaugrau,
+  body.mli-v2 .navbar-collapse .nav-item.bg-ocker,
+  body.mli-v2 .navbar-collapse .nav-item.bg-neuro,
+  body.mli-v2 .navbar-collapse .dropdown-menu .nav-item,
+  body.mli-v2 .navbar-collapse .dropdown-menu li {
+    background: transparent !important;
+    background-image: none !important;
     padding: 0 !important;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  }
+
+  body.mli-v2 .navbar-collapse .nav-link,
+  body.mli-v2 .navbar-collapse .nav-link.white,
+  body.mli-v2 .navbar-collapse .dropdown-item,
+  body.mli-v2 .navbar-collapse .dropdown-toggle,
+  body.mli-v2 .navbar-collapse .flagDE,
+  body.mli-v2 .navbar-collapse .flagDE .nav-link,
+  body.mli-v2 .navbar-collapse .flagEN,
+  body.mli-v2 .navbar-collapse .flagEN .nav-link,
+  body.mli-v2 .navbar-collapse .dropdown-menu .bg-petrol a.nav-link,
+  body.mli-v2 .navbar-collapse .dropdown-menu .bg-rotpink a.nav-link,
+  body.mli-v2 .navbar-collapse .dropdown-menu .bg-blaugrau a.nav-link,
+  body.mli-v2 .navbar-collapse .dropdown-menu .bg-ocker a.nav-link {
+    color: #2a2a2a !important;
+    opacity: 1 !important;
+    text-shadow: none !important;
+    -webkit-text-fill-color: #2a2a2a;
+  }
+
+  body.mli-v2 .navbar-collapse .nav-link:hover,
+  body.mli-v2 .navbar-collapse .nav-link:focus,
+  body.mli-v2 .navbar-collapse .dropdown-item:hover,
+  body.mli-v2 .navbar-collapse .dropdown-item:focus {
+    color: var(--mli-v2-petrol) !important;
+    -webkit-text-fill-color: var(--mli-v2-petrol);
+    background-color: rgba(13, 92, 99, 0.06) !important;
+  }
+
+  body.mli-v2 .navbar-collapse .dropdown-toggle::after {
+    border-top-color: #2a2a2a;
+    opacity: 1;
   }
 
   body.mli-v2 .nav-link {
-    padding: 1rem 0.25rem !important;
+    padding: 1rem 0.35rem !important;
     font-size: 1.05em !important;
     min-height: 3rem;
     display: flex;
