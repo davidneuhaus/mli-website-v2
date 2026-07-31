@@ -1,0 +1,44 @@
+{
+  "siteUrl": "https://leadership-munich.org",
+  "organization": {
+    "name": "MLI Leadership Institut",
+    "legalName": "MLI Leadership Institut GmbH",
+    "url": "https://leadership-munich.org/",
+    "logo": "https://leadership-munich.org/storage/app/media/Global/MLI-Logo-web.webp",
+    "sameAs": [
+      "https://www.linkedin.com/company/mli-leadership-institut-gmbh-metropolregion-m%C3%BCnchen/"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "München",
+      "addressCountry": "DE"
+    }
+  },
+  "hreflangExtra": {
+    "/kontakt/": "/en/contact/",
+    "/unser-anspruch/": "/en/our-claim/",
+    "/arbeiten-beim-mli/": "/en/careers/",
+    "/ressourcen/": "/en/resources/",
+    "/keynotes-und-speaker/": "/en/keynotes-and-speakers/",
+    "/stark-in-fuehrung/": "/en/strong-in-leadership/",
+    "/strategieaktivierung/": "/en/strategy-activation/",
+    "/strategieumsetzung-2025/": "/en/strategy-implementation/",
+    "/leitbild-und-strategieentwicklung/": "/en/strategy-development/",
+    "/adaptive-organisationsentwicklung-2025/": "/en/adaptive-organisational-development/",
+    "/explorative-strategieentwicklung-2025/": "/en/exploratory-strategy-development/"
+  },
+  "metaOverrides": {
+    "/en/": {
+      "title": "Strategy Consulting for Companies | MLI Leadership Institute",
+      "description": "MLI Leadership Institute: targeted strategy consulting for business success. Experienced managers and coaches from practice — get in touch."
+    },
+    "/adaptive-organisationsentwicklung-2025/": {
+      "description": "Adaptive Organisationsentwicklung mit dem MLI Leadership Institut: robuste Strukturen, Führungsdynamik und nachhaltige Veränderung für Unternehmen."
+    },
+    "/en/adaptive-organisational-development/": {
+      "title": "Adaptive Organisational Development | MLI Leadership Institute",
+      "description": "Adaptive organisational development with the MLI Leadership Institute: resilient structures, leadership dynamics, and lasting change."
+    }
+  },
+  "noindexPaths": ["/chatgpt/", "/collections-preview/"]
+}

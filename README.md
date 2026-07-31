@@ -126,11 +126,14 @@ npm run preview:v2           # http://127.0.0.1:4322/v2/
 
 | Layer | Role |
 |-------|------|
-| `scripts/build-v2.mjs` | Copy `public/` → `dist-v2/`, add `body.mli-v2`, inject CSS/JS, rewrite URLs |
+| `scripts/build-v2.mjs` | Copy `public/` → `dist-v2/`, inject CSS/JS, SEO/LLM pass, rewrite URLs |
+| `scripts/apply-seo-v2.mjs` | Absolute canonicals, hreflang, JSON-LD, `<main>`, home H1, OG/Twitter |
+| `src/data/seo.json` | Organization + hreflang extras + meta overrides (DE-first) |
+| `public/llms.txt` | LLM-oriented hub list (German primary) |
 | `public/css/mli-v2.css` | Nav drawer, button/focus states, scroll reveal, reduced-motion |
 | `public/js/mli-v2.js` | Drawer a11y, header scroll, IntersectionObserver reveals |
 
-Promote to the site root only when you explicitly choose to replace v1.
+Canonicals / JSON-LD always use `https://leadership-munich.org` (not github.io). Promote to the site root only when you explicitly choose to replace v1.
 
 ---
 

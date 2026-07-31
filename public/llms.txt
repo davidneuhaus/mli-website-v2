@@ -1,0 +1,28 @@
+# MLI Leadership Institut
+> Strategieberatung, Leadership Development und Strategieaktivierung für Unternehmen (primär deutschsprachig).
+
+Site: https://leadership-munich.org/
+Language: de (primary), en (secondary)
+
+## Primary hubs (DE)
+- https://leadership-munich.org/
+- https://leadership-munich.org/stark-in-fuehrung/
+- https://leadership-munich.org/strategieaktivierung/
+- https://leadership-munich.org/leadership-development/
+- https://leadership-munich.org/leitbild-und-strategieentwicklung/
+- https://leadership-munich.org/adaptive-organisationsentwicklung-2025/
+- https://leadership-munich.org/team/
+- https://leadership-munich.org/kontakt/
+- https://leadership-munich.org/leadership-stories/
+- https://leadership-munich.org/keynotes-und-speaker/
+- https://leadership-munich.org/podcast-2025/
+- https://leadership-munich.org/newsletter/
+
+## English hubs
+- https://leadership-munich.org/en/
+- https://leadership-munich.org/en/strong-in-leadership/
+- https://leadership-munich.org/en/strategy-activation/
+- https://leadership-munich.org/en/contact/
+
+## Optional
+- Sitemap: https://leadership-munich.org/sitemap.xml
