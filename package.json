@@ -13,6 +13,7 @@
     "generate:collections": "node scripts/generate-collections.mjs",
     "fetch:missing": "node scripts/fetch-missing-assets.mjs",
     "patch:keynotes": "node scripts/patch-keynotes-list.mjs",
+    "fix:content": "node scripts/apply-content-fixes.mjs",
     "generate": "npm run generate:pages && npm run generate:collections && npm run fetch:missing && npm run patch:keynotes"
   },
   "dependencies": {

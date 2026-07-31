@@ -6,7 +6,7 @@
 - [ ] `/stark-in-fuehrung/`
 - [ ] `/strategieaktivierung/`
 - [ ] `/leadership-development/`, `/leadership-coaching-2025/`, `/leadership-development-fuer-moderne-unternehmen-2025/`
-- [ ] `/leitbild-und-strategieentwicklung/`, `/apadtive-organisationsentwicklung-2025/`, `/strategieumsetzung-2025/`
+- [ ] `/leitbild-und-strategieentwicklung/`, `/adaptive-organisationsentwicklung-2025/`, `/strategieumsetzung-2025/`
 - [ ] `/unser-anspruch/`, `/team/`, `/arbeiten-beim-mli/`
 - [ ] `/podcast-2025/`, `/keynotes-und-speaker/`, `/leadership-know-how/`, `/leadership-stories/`, `/ressourcen/`
 - [ ] `/fortbildungen-events-2025/`

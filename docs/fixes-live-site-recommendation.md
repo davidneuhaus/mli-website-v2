@@ -99,7 +99,7 @@ Some Leadership Stories / blog image paths with spaces or special characters ret
 
 | Issue | Where | Recommendation |
 |-------|--------|----------------|
-| Typo in slug | `/apadtive-organisationsentwicklung-2025/` (“apadtive”) | Rename to `adaptive-...` + 301 from old slug |
+| Typo in slug | `/apadtive-organisationsentwicklung-2025/` (“apadtive”) | **Fixed in static copy** → `/adaptive-...` + 301; apply same on live CMS |
 | Typo in CTA copy | Kontakt cards: “Vereinbaren **SIe** …” | Fix to “Sie” |
 | Empty `<title>` on some 2025 pages | e.g. podcast/events variants during crawl | Set SEO title/description in October for every published page |
 | Keynotes “load more” is AJAX-only | `/keynotes-und-speaker/` | First paint only shows ~6 items; ensure all keynotes are crawlable (or accept static listing of all items — already improved in the static rebuild) |

@@ -21,7 +21,7 @@ const SEED = [
   "/leadership-coaching-2025/",
   "/leadership-development-fuer-moderne-unternehmen-2025/",
   "/leitbild-und-strategieentwicklung/",
-  "/apadtive-organisationsentwicklung-2025/",
+  "/adaptive-organisationsentwicklung-2025/",
   "/strategieumsetzung-2025/",
   "/unser-anspruch/",
   "/team/",

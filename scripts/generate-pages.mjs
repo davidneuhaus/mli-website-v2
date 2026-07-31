@@ -123,6 +123,7 @@ const REDIRECTS = [
   ["/datenschutz/", "/datenschutzerklaerung/"],
   ["/mli-new-leadership-summit-2024-leadership-in-times-of-ai/", "/fortbildungen-events-2025/"],
   ["/mli-leadership-quest-2024/", "/fortbildungen-events-2025/"],
+  ["/adaptive-organisationsentwicklung-2025/", "/adaptive-organisationsentwicklung-2025/"],
 ];
 
 async function exists(p) {

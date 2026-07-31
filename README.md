@@ -133,7 +133,7 @@ Check these off before DNS cutover.
 
 - [ ] **Contact destination email** — set `CONTACT_TO` (and allowed `CONTACT_FROM`) in `public/api/contact.php`, then rebuild
 - [ ] **Hosting type for mailer** — confirm PHP on VPS (`contact.php`) vs serverless/Web3Forms (`public/api/contact.js`)
-- [ ] **HubSpot whitepaper** — set `portalId` + `whitepaperFormId` in `src/data/hubspot.json`, rebuild; verify form delivers/follows up in HubSpot
+- [ ] **HubSpot whitepaper** — *(deferred)* paste `portalId` + `whitepaperFormId` into `src/data/hubspot.json`, then rebuild; verify form delivers/follows up in HubSpot
 - [ ] **Newsletter final choice** — keep CleverReach or replace (see [docs/NEWSLETTER.md](docs/NEWSLETTER.md))
 - [ ] **Usercentrics domain allowlist** — in UC admin for `0qtDDaIFgHMzAV`, allow `leadership-munich.org` / `www` / staging host (see [docs/USERCENTRICS.md](docs/USERCENTRICS.md))
 - [ ] **Confirm EN parity expectation** — full EN ship vs DE-first (currently both are exported)
@@ -182,6 +182,8 @@ Check these off before DNS cutover.
 | [docs/NEWSLETTER.md](docs/NEWSLETTER.md) | CleverReach temporary keep / decision pending |
 | [docs/QA-CHECKLIST.md](docs/QA-CHECKLIST.md) | Page and integration QA before launch |
 | [docs/fixes-live-site-recommendation.md](docs/fixes-live-site-recommendation.md) | Broken items on the **live** CMS site to fix |
+| [docs/broken-video-urls.md](docs/broken-video-urls.md) | Video/poster 404s — paste correct URLs later |
+| [docs/GITHUB-PAGES.md](docs/GITHUB-PAGES.md) | Preview on github.io |
 
 ---
 
