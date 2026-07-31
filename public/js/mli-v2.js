@@ -232,6 +232,13 @@
     candidates.forEach(function (el) {
       if (seen.has(el)) return;
       if (el.closest(".navbar") || el.closest("#layout-header")) return;
+      /* Skip logo / partner strips — avoid busy motion on those bands */
+      if (
+        el.classList.contains("kundenstimmen") ||
+        el.closest(".kundenstimmen") ||
+        /kunden/i.test(el.className || "")
+      )
+        return;
       /* Skip tiny utility nodes */
       if (el.children.length === 0 && (el.textContent || "").trim().length < 40)
         return;
