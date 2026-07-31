@@ -2,7 +2,7 @@
 
 Static rebuild of [leadership-munich.org](https://leadership-munich.org/), migrated off **October CMS** so the site can run on a new server as plain HTML/CSS/JS (plus one small contact endpoint).
 
-This README is the project source of truth for **the migration plan, decisions we made, and todos before launch**.
+This README is the project source of truth for **the migration plan, decisions we made, and [what’s still to do before launch](#still-to-do-before-launch)**.
 
 ---
 
@@ -87,7 +87,9 @@ Live October CMS
 | `src/data/hubspot.json` | HubSpot portal/form IDs |
 | `deploy/nginx-mli.conf` | Redirects + `try_files` snippet |
 | `docs/` | Deploy, Usercentrics, Newsletter, QA |
-| `dist/` | Build output to upload to the new server |
+| `dist/` | v1 build output to upload to the new server |
+| `dist-v2/` | v2 presentation build (same pages/copy; enhanced UX) — gitignored |
+| `public/css/mli-v2.css`, `public/js/mli-v2.js` | v2 display layer (injected only into `dist-v2/`) |
 
 ---
 
@@ -111,6 +113,27 @@ Upload **contents of `dist/`** to the web root of the new server (production; no
 
 ---
 
+## v2 presentation layer (`/v2/`)
+
+Parallel UX polish — **same pages, same text, same brand** — with stronger menu UX, button states, and light motion. v1 (`public/` / `dist/`) stays the launch baseline.
+
+```bash
+npm run build:v2             # public/ → dist-v2/ with BASE_PATH=/v2 + mli-v2 inject
+npm run preview:v2           # http://127.0.0.1:4322/v2/
+```
+
+**Production:** upload `dist-v2/` contents to the server path served at `/v2/` (see `location /v2/` in [`deploy/nginx-mli.conf`](deploy/nginx-mli.conf)). Example: `https://leadership-munich.org/v2/`.
+
+| Layer | Role |
+|-------|------|
+| `scripts/build-v2.mjs` | Copy `public/` → `dist-v2/`, add `body.mli-v2`, inject CSS/JS, rewrite URLs |
+| `public/css/mli-v2.css` | Nav drawer, button/focus states, scroll reveal, reduced-motion |
+| `public/js/mli-v2.js` | Drawer a11y, header scroll, IntersectionObserver reveals |
+
+Promote to the site root only when you explicitly choose to replace v1.
+
+---
+
 ## Functionality map (CMS → static)
 
 | Feature | Live CMS | Static site |
@@ -125,38 +148,48 @@ Upload **contents of `dist/`** to the web root of the new server (production; no
 
 ---
 
-## Todos before launch
+## Still to do before launch
 
-Check these off before DNS cutover.
+Static pages and most wiring are done. **Nothing below is optional for a real production cutover** except the “Can wait” section. GitHub Pages is only a preview — production needs a host that can run the contact endpoint (PHP or serverless).
 
-### Required configuration
+### 1. Config you must supply
 
-- [ ] **Contact destination email** — set `CONTACT_TO` (and allowed `CONTACT_FROM`) in `public/api/contact.php`, then rebuild
-- [ ] **Hosting type for mailer** — confirm PHP on VPS (`contact.php`) vs serverless/Web3Forms (`public/api/contact.js`)
-- [ ] **HubSpot whitepaper** — *(deferred)* paste `portalId` + `whitepaperFormId` into `src/data/hubspot.json`, then rebuild; verify form delivers/follows up in HubSpot
-- [ ] **Newsletter final choice** — keep CleverReach or replace (see [docs/NEWSLETTER.md](docs/NEWSLETTER.md))
-- [ ] **Usercentrics domain allowlist** — in UC admin for `0qtDDaIFgHMzAV`, allow `leadership-munich.org` / `www` / staging host (see [docs/USERCENTRICS.md](docs/USERCENTRICS.md))
-- [ ] **Confirm EN parity expectation** — full EN ship vs DE-first (currently both are exported)
+| Item | Where | Notes |
+|------|--------|--------|
+| Contact inbox | `public/api/contact.php` → `CONTACT_TO` / `CONTACT_FROM` | Then rebuild, or copy PHP into `dist/api/` |
+| Mailer host | PHP on VPS **or** Web3Forms / Worker via `public/api/contact.js` | GitHub Pages cannot send mail |
+| HubSpot whitepaper IDs | `src/data/hubspot.json` → `portalId`, `whitepaperFormId` | Paste when ready; rebuild; see `_todo` in that file |
+| Newsletter decision | CleverReach keep vs replace | [docs/NEWSLETTER.md](docs/NEWSLETTER.md) |
+| Usercentrics domains | UC admin for settings ID `0qtDDaIFgHMzAV` | Allow `leadership-munich.org`, `www`, staging, and `davidneuhaus.github.io` for preview — [docs/USERCENTRICS.md](docs/USERCENTRICS.md) |
+| Broken hero / content videos | [docs/broken-video-urls.md](docs/broken-video-urls.md) | Tags kept in HTML; fill correct URLs or drop files under `public/storage/...` |
 
-### Deploy & cutover
+### 2. Deploy & DNS cutover
 
-- [ ] Deploy `dist/` over HTTPS on the new server
-- [ ] Apply nginx redirects (`deploy/nginx-mli.conf`) or platform `_redirects`
-- [ ] Enable PHP (or serverless) for `/api/contact.php` / contact worker
-- [ ] Smoke-test contact form → inbox
-- [ ] Smoke-test HubSpot whitepaper + Meetings/Calendly CTAs
-- [ ] Smoke-test CleverReach subscribe (or replacement)
-- [ ] Verify Usercentrics banner; marketing tags only after consent
-- [ ] Run [docs/QA-CHECKLIST.md](docs/QA-CHECKLIST.md) (DE/EN nav, stories, mobile)
-- [ ] DNS cutover for `leadership-munich.org`; keep TLS certs
-- [ ] Submit updated sitemap; spot-check Search Console after cutover
+- [ ] Build: `npm run build` → upload **contents of `dist/`** to production web root (no `BASE_PATH`)
+- [ ] HTTPS + TLS for `leadership-munich.org` / `www`
+- [ ] Apply redirects: `deploy/nginx-mli.conf` and/or `public/_redirects` (includes `apadtive-…` → `adaptive-…`)
+- [ ] Enable contact endpoint (`/api/contact.php` or serverless equivalent)
+- [ ] DNS cutover; keep old CMS offline or redirect once smoke tests pass
+- [ ] Submit sitemap; spot-check Search Console after cutover
 
-### Nice-to-have / follow-up
+### 3. Smoke tests (must pass)
 
-- [ ] Re-crawl (`npm run export:site`) if live CMS content changes before cutover
-- [ ] Replace HubSpot placeholder copy on whitepaper pages once real form IDs are live
-- [ ] Optional reCAPTCHA on contact form if spam appears
-- [ ] Gradually rebuild high-traffic pages as clean Astro components (optional phase 2)
+- [ ] Contact form → message arrives in inbox
+- [ ] HubSpot whitepaper form submits (after IDs are live)
+- [ ] CleverReach subscribe (or replacement) works
+- [ ] Usercentrics banner shows; marketing tags only after consent; footer “Cookie-Einstellungen” opens settings
+- [ ] HubSpot Meetings + Calendly CTAs open
+- [ ] Keynotes “load more” works
+- [ ] Sample DE + EN pages, stories, keynotes on mobile — full list in [docs/QA-CHECKLIST.md](docs/QA-CHECKLIST.md)
+- [ ] Spot-check redirects (`/strategieumsetzung/` → `…-2025/`, etc.)
+
+### 4. Can wait (post-launch / nice-to-have)
+
+- [ ] Re-crawl live CMS if content changes before cutover (`npm run export:site` → generate → build)
+- [ ] Replace HubSpot placeholder copy once real form IDs are live
+- [ ] Optional reCAPTCHA on contact if spam appears
+- [ ] Fix same broken videos / typos on the **live** October site if it stays online in parallel ([docs/fixes-live-site-recommendation.md](docs/fixes-live-site-recommendation.md))
+- [ ] Phase 2: rebuild high-traffic pages as clean Astro components (optional)
 
 ---
 
@@ -198,3 +231,5 @@ Check these off before DNS cutover.
 | `npm run dev` | Local preview |
 | `npm run build` | Generate + Astro build → `dist/` |
 | `npm run preview` | Preview production build |
+| `npm run build:v2` | Presentation polish → `dist-v2/` (`/v2/` paths) |
+| `npm run preview:v2` | Serve nested preview at `/v2/` |

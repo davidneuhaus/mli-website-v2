@@ -7,6 +7,8 @@
     "dev": "astro dev",
     "build": "npm run generate && astro build",
     "build:github": "BASE_PATH=${BASE_PATH:-/mli-website} SITE_URL=${SITE_URL:-https://davidneuhaus.github.io} astro build && BASE_PATH=${BASE_PATH:-/mli-website} node scripts/apply-base-path.mjs --dir dist",
+    "build:v2": "node scripts/build-v2.mjs",
+    "preview:v2": "node scripts/preview-v2.mjs",
     "preview": "astro preview",
     "export:site": "node scripts/export-site.mjs",
     "generate:pages": "node scripts/generate-pages.mjs",

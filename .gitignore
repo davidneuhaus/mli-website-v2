@@ -1,5 +1,7 @@
 node_modules/
 dist/
+dist-v2/
+.v2-preview/
 .astro/
 export/
 .DS_Store

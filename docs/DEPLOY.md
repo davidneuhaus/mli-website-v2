@@ -10,6 +10,17 @@ npm run build             # astro build → dist/
 
 Upload the contents of `dist/` to the web root of the new server.
 
+## v2 presentation (`/v2/`)
+
+Optional parallel UX layer (same content; enhanced menu/buttons/motion):
+
+```bash
+npm run build:v2          # → dist-v2/
+npm run preview:v2        # http://127.0.0.1:4322/v2/
+```
+
+Upload **contents of `dist-v2/`** to the path served at `/v2/` (see `location /v2/` in `deploy/nginx-mli.conf`). Keep v1 at site root until you promote v2.
+
 ## nginx
 
 See [`deploy/nginx-mli.conf`](../deploy/nginx-mli.conf) for redirects and `try_files`.
