@@ -105,7 +105,9 @@ Open **http://localhost:4321/** (or http://127.0.0.1:4321/).
 
 Compare against the live site: https://leadership-munich.org/
 
-Upload **contents of `dist/`** to the web root of the new server.
+**GitHub Pages preview:** see [docs/GITHUB-PAGES.md](docs/GITHUB-PAGES.md) → https://davidneuhaus.github.io/mli-website/ (after enabling Pages + Actions).
+
+Upload **contents of `dist/`** to the web root of the new server (production; no `BASE_PATH`).
 
 ---
 

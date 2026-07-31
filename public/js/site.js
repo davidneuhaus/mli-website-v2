@@ -264,6 +264,35 @@
     });
   }
 
+  /* ---- Usercentrics: open privacy layer (fingerprint fallback) ---- */
+  function openUsercentricsPrivacy() {
+    try {
+      if (window.__ucCmp && typeof window.__ucCmp.showSecondLayer === "function") {
+        return Promise.resolve(window.__ucCmp.showSecondLayer());
+      }
+      if (window.UC_UI && typeof window.UC_UI.showSecondLayer === "function") {
+        window.UC_UI.showSecondLayer();
+        return Promise.resolve();
+      }
+    } catch (e) {
+      console.warn("[MLI] Usercentrics open failed", e);
+    }
+    console.warn(
+      "[MLI] Usercentrics API not ready. Allowlist this domain in Usercentrics Admin (settings id 0qtDDaIFgHMzAV)."
+    );
+    return Promise.resolve();
+  }
+
+  function initPrivacyOpeners() {
+    document.addEventListener("click", function (ev) {
+      const t = ev.target && ev.target.closest && ev.target.closest(".mli-open-privacy, [data-mli-open-privacy]");
+      if (!t) return;
+      ev.preventDefault();
+      openUsercentricsPrivacy();
+    });
+    window.mliOpenPrivacySettings = openUsercentricsPrivacy;
+  }
+
   ready(function () {
     initContactForm();
     initLoadMore();
@@ -271,5 +300,6 @@
     initHubspotForms();
     triggerLegacyRender();
     initBrokenMediaFallback();
+    initPrivacyOpeners();
   });
 })();
