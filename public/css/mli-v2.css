@@ -53,6 +53,51 @@ body.mli-v2 .navbar-toggler:focus-visible {
   box-shadow: var(--mli-v2-focus) !important;
 }
 
+/* ---- Cookie / privacy control (footer + inline) ---- */
+body.mli-v2 .mli-open-privacy {
+  appearance: none;
+  -webkit-appearance: none;
+  background: none !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  margin: 0;
+  font: inherit;
+  cursor: pointer;
+}
+
+body.mli-v2 .mli-open-privacy:focus,
+body.mli-v2 .mli-open-privacy:focus-visible {
+  box-shadow: none !important;
+}
+
+body.mli-v2 .mli-open-privacy--footer {
+  display: inline;
+  font-size: 1em !important;
+  color: #fff !important;
+  text-decoration: none !important;
+  text-transform: uppercase;
+  padding: 0 !important;
+  line-height: inherit;
+}
+
+body.mli-v2 .mli-open-privacy--footer:hover,
+body.mli-v2 .mli-open-privacy--footer:focus {
+  color: #fff !important;
+  text-decoration: underline !important;
+}
+
+body.mli-v2 .mli-open-privacy--footer:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+}
+
+body.mli-v2 .mli-open-privacy--inline {
+  color: inherit;
+  text-decoration: underline;
+  padding: 0;
+  vertical-align: baseline;
+}
+
 /* ---- Language flag (EN / DE) — more space between label and flag ---- */
 body.mli-v2 .flagDE,
 body.mli-v2 .flagEN {

@@ -253,9 +253,9 @@ async function fixEmptyTitles() {
 async function injectPrivacyFooter() {
   const files = await walkHtml(PUBLIC);
   const btnDe =
-    '<li class="list-inline-item"><button type="button" class="mli-open-privacy" style="background:none;border:none;padding:0;color:inherit;text-decoration:underline;cursor:pointer;font:inherit;">Cookie-Einstellungen</button></li>';
+    '<br><button type="button" class="mli-open-privacy mli-open-privacy--footer">&nbsp;COOKIE-EINSTELLUNGEN&nbsp;</button>';
   const btnEn =
-    '<li class="list-inline-item"><button type="button" class="mli-open-privacy" style="background:none;border:none;padding:0;color:inherit;text-decoration:underline;cursor:pointer;font:inherit;">Cookie settings</button></li>';
+    '<br><button type="button" class="mli-open-privacy mli-open-privacy--footer">&nbsp;COOKIE SETTINGS&nbsp;</button>';
   let n = 0;
   for (const file of files) {
     let html = await fs.readFile(file, "utf8");
@@ -263,10 +263,13 @@ async function injectPrivacyFooter() {
     const urlPath = pathFromFile(file);
     const btn = urlPath.startsWith("/en/") ? btnEn : btnDe;
     let next = html;
-    if (/DATENSCHUTZ<\/a>\s*<\/li>/i.test(html)) {
-      next = html.replace(/(DATENSCHUTZ<\/a>\s*<\/li>)/i, `$1\n${btn}`);
-    } else if (/Privacy Policy<\/a>\s*<\/li>/i.test(html)) {
-      next = html.replace(/(Privacy Policy<\/a>\s*<\/li>)/i, `$1\n${btn}`);
+    if (/DATENSCHUTZ<\/a>/i.test(html) && /IMPRESSUM<\/a>/i.test(html)) {
+      next = html.replace(
+        /(DATENSCHUTZ(?:&nbsp;)?<\/a>)(\s*<\/p>)?/i,
+        `$1\n${btn}$2`
+      );
+    } else if (/Privacy Policy<\/a>/i.test(html)) {
+      next = html.replace(/(Privacy Policy<\/a>)/i, `$1\n${btn}`);
     } else if (/href="\/datenschutzerklaerung\/"/i.test(html)) {
       next = html.replace(
         /(<a[^>]*href="\/datenschutzerklaerung\/"[^>]*>[^<]*<\/a>)/i,

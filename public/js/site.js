@@ -4,6 +4,21 @@
 (function () {
   "use strict";
 
+  /* Cookie settings control — match footer legal links (not default button chrome) */
+  (function injectPrivacyLinkStyles() {
+    if (document.getElementById("mli-privacy-link-styles")) return;
+    var s = document.createElement("style");
+    s.id = "mli-privacy-link-styles";
+    s.textContent =
+      ".mli-open-privacy{appearance:none;-webkit-appearance:none;background:none!important;border:0!important;box-shadow:none!important;outline:none;margin:0;font:inherit;cursor:pointer;}" +
+      ".mli-open-privacy--footer{display:inline;font-size:1em!important;color:#fff!important;text-decoration:none!important;text-transform:uppercase;padding:0!important;line-height:inherit;}" +
+      ".mli-open-privacy--footer:hover,.mli-open-privacy--footer:focus{color:#fff!important;text-decoration:underline!important;}" +
+      ".mli-open-privacy--footer:focus-visible{outline:2px solid #fff;outline-offset:3px;box-shadow:none!important;}" +
+      ".mli-open-privacy--inline{color:inherit;text-decoration:underline;padding:0;vertical-align:baseline;}" +
+      ".mli-open-privacy--inline:focus-visible{outline:2px solid currentColor;outline-offset:2px;box-shadow:none!important;}";
+    (document.head || document.documentElement).appendChild(s);
+  })();
+
   function ready(fn) {
     if (document.readyState !== "loading") fn();
     else document.addEventListener("DOMContentLoaded", fn);
