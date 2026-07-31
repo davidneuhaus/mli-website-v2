@@ -21,10 +21,6 @@
     var body = document.body;
     if (!body || !body.classList.contains("mli-v2")) return;
 
-    requestAnimationFrame(function () {
-      body.classList.add("mli-v2-booted");
-    });
-
     initNav();
     initHeaderScroll();
     if (!reduceMotion) initScrollReveal();
@@ -128,15 +124,34 @@
       }
     });
 
-    /* Mobile nested dropdowns: ensure tap expands (Bootstrap dropdown) */
-    if (isMobileNav()) {
-      collapse.querySelectorAll(".dropdown-toggle").forEach(function (toggle) {
-        toggle.addEventListener("click", function (e) {
-          if (!isMobileNav()) return;
-          /* Allow Bootstrap to handle; ensure parent gets .show for our CSS */
+    /* Mobile accordion submenus — don't rely on Bootstrap Dropdown hover/popper */
+    collapse.addEventListener(
+      "click",
+      function (e) {
+        if (!isMobileNav()) return;
+        var toggle = e.target.closest(".dropdown-toggle");
+        if (!toggle || !collapse.contains(toggle)) return;
+        var parent = toggle.closest(".nav-item.dropdown, .dropdown");
+        if (!parent) return;
+        var menu = parent.querySelector(":scope > .dropdown-menu");
+        if (!menu) return;
+        e.preventDefault();
+        e.stopPropagation();
+        var open = parent.classList.contains("show");
+        collapse.querySelectorAll(".nav-item.dropdown.show, .dropdown.show").forEach(function (el) {
+          if (el === parent || parent.contains(el)) return;
+          el.classList.remove("show");
+          var t = el.querySelector(":scope > .dropdown-toggle");
+          var m = el.querySelector(":scope > .dropdown-menu");
+          if (t) t.setAttribute("aria-expanded", "false");
+          if (m) m.classList.remove("show");
         });
-      });
-    }
+        parent.classList.toggle("show", !open);
+        menu.classList.toggle("show", !open);
+        toggle.setAttribute("aria-expanded", open ? "false" : "true");
+      },
+      true
+    );
 
     window.addEventListener(
       "resize",

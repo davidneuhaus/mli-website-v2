@@ -210,7 +210,7 @@ Confirm URL home: **`/expedition-zukunft/`** (recommended) vs. nested under `/le
 **Wissen dropdown (clustered, DE labels):**
 
 1. **Expedition Zukunft** ← hub `/expedition-zukunft/` *(flagship — first item)*  
-2. FAQ zum Buch → `/expedition-zukunft/faq/` *(only if separate URL)*  
+2. ~~FAQ zum Buch~~ → only linked on the book hub (`/expedition-zukunft/`), not in Wissen nav  
 3. — separator / visual group —  
 4. Leadership Stories  
 5. Leadership Know-how  

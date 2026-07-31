@@ -188,23 +188,42 @@ body.mli-v2 .flagEN > .nav-link {
 @media (max-width: 1199.98px) {
   body.mli-v2.mli-v2-nav-open {
     overflow: hidden;
-    touch-action: none;
+    /* keep taps working inside the drawer (avoid touch-action:none) */
+  }
+
+  /*
+   * Critical: theme sets .navbar { z-index: 9 }. A fixed drawer inside that
+   * stacking context paints BELOW a body-level backdrop — menu looks gray
+   * and is not clickable. Elevate the whole header while the drawer is open.
+   */
+  body.mli-v2.mli-v2-nav-open #layout-header,
+  body.mli-v2.mli-v2-nav-open .navbar {
+    z-index: 100020 !important;
+    position: relative;
   }
 
   body.mli-v2 .mli-v2-nav-backdrop {
     position: fixed;
     inset: 0;
-    z-index: 99990;
-    background: rgba(20, 24, 28, 0.4);
+    z-index: 100010;
+    background: rgba(15, 20, 24, 0.55);
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.6s var(--mli-v2-ease), visibility 0.6s;
-    backdrop-filter: blur(1px);
+    transition: opacity 0.35s var(--mli-v2-ease), visibility 0.35s;
+    pointer-events: none;
+    backdrop-filter: none;
   }
 
   body.mli-v2 .mli-v2-nav-backdrop.is-visible {
     opacity: 1;
     visibility: visible;
+    pointer-events: auto;
+  }
+
+  /* Cookie FAB sits above the drawer otherwise and steals taps */
+  body.mli-v2.mli-v2-nav-open .mli-consent-fab {
+    visibility: hidden !important;
+    pointer-events: none !important;
   }
 
   body.mli-v2 .navbar-collapse {
@@ -223,15 +242,16 @@ body.mli-v2 .flagEN > .nav-link {
     background-image: none !important;
     color: #2a2a2a !important;
     opacity: 1 !important;
-    z-index: 99995;
+    z-index: 100030;
     overflow-y: auto;
     overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
     box-shadow: -12px 0 40px rgba(0, 0, 0, 0.1);
     transform: translateX(100%);
-    transition: transform 0.6s var(--mli-v2-ease) !important;
+    transition: transform 0.45s var(--mli-v2-ease) !important;
     display: block !important;
     visibility: visible;
+    pointer-events: auto;
   }
 
   body.mli-v2 .navbar-collapse.collapsing {
@@ -309,17 +329,24 @@ body.mli-v2 .flagEN > .nav-link {
 
   body.mli-v2 .navbar-toggler {
     position: relative;
-    z-index: 99996;
+    z-index: 100040;
     width: 2.75rem;
     height: 2.75rem;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     transition: opacity 0.35s ease;
+    pointer-events: auto;
   }
 
   body.mli-v2 .navbar-toggler[aria-expanded="true"] {
-    opacity: 0.7;
+    opacity: 0.85;
+  }
+
+  body.mli-v2 .navbar-collapse .nav-link,
+  body.mli-v2 .navbar-collapse .dropdown-item {
+    pointer-events: auto;
+    cursor: pointer;
   }
 
   body.mli-v2 .dropdown-menu {
@@ -331,16 +358,17 @@ body.mli-v2 .flagEN > .nav-link {
     border: none;
     padding: 0 0 0.5rem 0.75rem;
     background: rgba(13, 92, 99, 0.03);
-    display: none;
+    display: none !important;
     transform: none !important;
     opacity: 1 !important;
     visibility: visible !important;
+    pointer-events: auto;
   }
 
   body.mli-v2 .dropdown-menu.show,
   body.mli-v2 .nav-item.show > .dropdown-menu {
-    display: block;
-    animation: mli-v2-expand 0.5s var(--mli-v2-ease);
+    display: block !important;
+    animation: mli-v2-expand 0.35s var(--mli-v2-ease);
   }
 
   body.mli-v2 .dropdown-item {
@@ -604,21 +632,6 @@ body.mli-v2 .mli-v2-reveal {
 body.mli-v2 .mli-v2-reveal.is-inview {
   opacity: 1;
   transform: translateY(0);
-}
-
-body.mli-v2.mli-v2-booted #layout-header .navbar {
-  animation: mli-v2-header-in 0.8s var(--mli-v2-ease) both;
-}
-
-@keyframes mli-v2-header-in {
-  from {
-    opacity: 0;
-    transform: translateY(-0.25rem);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 /* ---- Reduced motion ---- */

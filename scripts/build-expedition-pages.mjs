@@ -322,11 +322,6 @@ function rebuildNavDe(html) {
                 </a>
                     </li>
                 <li role="presentation" class="nav-item dropdown   ">
-                            <a class="nav-link" href="/expedition-zukunft/faq/">
-                    FAQ zum Buch
-                </a>
-                    </li>
-                <li role="presentation" class="nav-item dropdown   ">
                             <a class="nav-link" href="/strategie-magazin/">
                     Magazin Tiefgang
                 </a>

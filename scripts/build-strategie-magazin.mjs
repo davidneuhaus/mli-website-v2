@@ -320,16 +320,9 @@ function injectMagazinNavDe(html) {
                     Magazin Tiefgang
                 </a>
                     </li>`;
-  // After FAQ zum Buch
-  if (html.includes("/expedition-zukunft/faq/")) {
-    return html.replace(
-      /(<a class="nav-link" href="\/expedition-zukunft\/faq\/">\s*FAQ zum Buch\s*<\/a>\s*<\/li>)/i,
-      `$1${item}`
-    );
-  }
-  // Fallback: after Expedition Zukunft
+  // After Buch: Expedition Zukunft (or legacy label)
   return html.replace(
-    /(<a class="nav-link" href="\/expedition-zukunft\/">\s*Expedition Zukunft\s*<\/a>\s*<\/li>)/i,
+    /(<a class="nav-link" href="\/expedition-zukunft\/">\s*(?:Buch:\s*)?Expedition Zukunft\s*<\/a>\s*<\/li>)/i,
     `$1${item}`
   );
 }
