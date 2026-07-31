@@ -12,7 +12,11 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
 const SRC = path.join(ROOT, "public");
 const OUT = path.join(ROOT, "dist-v2");
-const BASE = "/v2";
+const BASE = (() => {
+  const raw = process.env.BASE_PATH || "/v2";
+  if (!raw || raw === "/") return "/v2";
+  return `/${String(raw).replace(/^\/+|\/+$/g, "")}`;
+})();
 
 const CSS_TAG =
   '<link href="/css/mli-v2.css" rel="stylesheet" id="mli-v2-css">';

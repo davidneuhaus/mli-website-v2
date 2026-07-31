@@ -30,17 +30,17 @@ jobs:
       - name: Install
         run: npm ci
 
-      - name: Build for GitHub Pages
+      - name: Build v2 for GitHub Pages
         env:
-          # Project site: https://davidneuhaus.github.io/mli-website/
-          BASE_PATH: /mli-website
+          # https://davidneuhaus.github.io/mli-website-v2/
+          BASE_PATH: /mli-website-v2
           SITE_URL: https://davidneuhaus.github.io
-        run: npm run build:github
+        run: npm run build:v2
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: dist
+          path: dist-v2
 
   deploy:
     needs: build
