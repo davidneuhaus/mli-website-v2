@@ -419,6 +419,128 @@ body.mli-v2 #mli-contact-flash.alert-danger {
   border-left: 4px solid var(--mli-v2-rotpink);
 }
 
+/* ---- Newsletter page: invite + less empty space ---- */
+body.mli-v2.page-newsletter #layout-content {
+  padding-top: 4.5rem;
+}
+
+body.mli-v2.page-newsletter .mli-newsletter-shell {
+  background:
+    radial-gradient(120% 80% at 100% 0%, rgba(13, 92, 99, 0.08), transparent 55%),
+    radial-gradient(90% 70% at 0% 100%, rgba(174, 20, 74, 0.06), transparent 50%),
+    linear-gradient(180deg, #f7f8f8 0%, #ffffff 45%, #ffffff 100%);
+  min-height: calc(100vh - 5rem);
+}
+
+body.mli-v2.page-newsletter .mli-newsletter-wrap {
+  padding: 2rem 1rem 3.5rem !important;
+  max-width: 1100px;
+}
+
+body.mli-v2.page-newsletter .mli-newsletter-copy h1 {
+  color: #ae144a;
+  font-size: clamp(1.6rem, 3vw, 2.25rem);
+  line-height: 1.2;
+  margin: 0.5rem 0 1rem;
+}
+
+body.mli-v2.page-newsletter .mli-newsletter-copy > p {
+  font-size: 1.05rem;
+  line-height: 1.55;
+  color: #3a3a3a;
+  max-width: 36rem;
+}
+
+body.mli-v2.page-newsletter .mli-newsletter-details {
+  margin-top: 0.5rem;
+}
+
+body.mli-v2.page-newsletter .mli-newsletter-details ul {
+  margin: 0.5rem 0 1.25rem;
+  padding-left: 1.15rem;
+  max-width: 36rem;
+}
+
+body.mli-v2.page-newsletter .mli-newsletter-details ul li {
+  margin-bottom: 0.55rem;
+  line-height: 1.45;
+}
+
+body.mli-v2.page-newsletter .mli-newsletter-details p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #4a4a4a;
+  max-width: 36rem;
+}
+
+@media (min-width: 992px) {
+  body.mli-v2.page-newsletter .mli-newsletter-details {
+    margin-top: -0.5rem;
+  }
+}
+
+body.mli-v2.page-newsletter .mli-newsletter-brand {
+  margin: 0 0 0.75rem;
+}
+
+body.mli-v2.page-newsletter .mli-newsletter-brand img {
+  margin: 0 !important;
+}
+
+body.mli-v2.page-newsletter .mli-newsletter-form {
+  margin-top: 0.25rem;
+}
+
+body.mli-v2.page-newsletter .mli-newsletter-form .cr_form,
+body.mli-v2.page-newsletter .mli-newsletter-form form.cr_form {
+  background: #fff;
+  border: 1px solid rgba(13, 92, 99, 0.12);
+  padding: 1.5rem 1.35rem 1.35rem;
+  position: sticky;
+  top: 5.5rem;
+}
+
+body.mli-v2.page-newsletter .mli-newsletter-form .cr_form::before {
+  content: "Jetzt anmelden";
+  display: block;
+  font-family: "Source SansPro Bold", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 0.95rem;
+  color: var(--mli-v2-petrol);
+  margin-bottom: 1rem;
+}
+
+body.mli-v2.page-newsletter .mli-newsletter-form .form-control {
+  border: 1px solid #cfd5d6;
+  min-height: 3rem;
+  background: #fafbfb;
+}
+
+body.mli-v2.page-newsletter .mli-newsletter-form .form-control:focus {
+  border-color: var(--mli-v2-petrol);
+  background: #fff;
+}
+
+body.mli-v2.page-newsletter .mli-newsletter-form .btn-primary {
+  width: 100%;
+  margin-top: 0.35rem;
+  padding: 0.85rem 1.25rem;
+  font-size: 1.05rem;
+}
+
+@media (max-width: 991.98px) {
+  body.mli-v2.page-newsletter .mli-newsletter-wrap {
+    padding: 1.25rem 0.85rem 2.5rem !important;
+  }
+
+  body.mli-v2.page-newsletter .mli-newsletter-form .cr_form,
+  body.mli-v2.page-newsletter .mli-newsletter-form form.cr_form {
+    position: static;
+    margin-top: 0.5rem;
+  }
+}
+
 /* ---- Partner / customer logo bands: quieter motion ---- */
 body.mli-v2 .kundenstimmen,
 body.mli-v2 [class*="kunden"] {
