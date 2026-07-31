@@ -1,0 +1,54 @@
+{
+  "hub": {
+    "slug": "",
+    "title": "Expedition Zukunft | Buch & Führungsphilosophie – Sebastian Morgner / MLI",
+    "description": "Expedition Zukunft von Sebastian Morgner: exploratives Führen, Strategieberatung & Führungskräfteberatung als Erkundungsreise. Impulse zu Komplexität, Mission und Strategieaktivierung – MLI München.",
+    "h1": "Expedition Zukunft",
+    "eyebrow": "Buch & Führungsphilosophie",
+    "lead": "Wie wir den Zufall nutzen können, um Ungewissheit und Komplexität zu meistern — eine Führungsphilosophie für Organisationen auf Erkundungsreise.",
+    "bodyClass": "page-expedition-zukunft"
+  },
+  "faq": {
+    "slug": "faq",
+    "title": "FAQ Expedition Zukunft | Strategieberatung & exploratives Führen – MLI",
+    "description": "FAQ zu Expedition Zukunft: exploratives Führen, komplex vs. kompliziert, Strategie Berater, Führungskräfteberatung und Strategieaktivierung – klare Antworten von Sebastian Morgner / MLI.",
+    "h1": "FAQ: Expedition Zukunft",
+    "bodyClass": "page-expedition-zukunft-faq"
+  },
+  "articles": [
+    {
+      "slug": "strategie-als-erkundungsreise",
+      "title": "Strategie als Erkundungsreise | Expedition Zukunft – MLI",
+      "description": "Warum Strategie eine Erkundungsreise ist: #Nextland, Hockeystick-Illusion und explorative Strategieberatung. Impulse aus Expedition Zukunft von Sebastian Morgner.",
+      "h1": "Strategie als Erkundungsreise",
+      "service": "/strategieaktivierung/",
+      "image": "/storage/app/media/Slider-Motive-Desktop/MLI_Sebastian-Morgner-1-Desktop.webp"
+    },
+    {
+      "slug": "exploratives-fuehren",
+      "title": "Exploratives Führen — fünf Elemente | Expedition Zukunft",
+      "description": "Exploratives Führen erklärt: Haltung, Mission, Zukunftspotenziale, Krisenfestigkeit, mentales Navigationssystem — für Leadership Development und Führungskräfte Coaching.",
+      "h1": "Exploratives Führen — die fünf Elemente",
+      "service": "/stark-in-fuehrung/",
+      "image": "/storage/app/media/Trenner-Motive-allgemein/MLI Sebastian Morgner Trenner.webp"
+    },
+    {
+      "slug": "komplex-versus-kompliziert",
+      "title": "Komplex vs. kompliziert in der Führung | Expedition Zukunft",
+      "description": "Komplex und kompliziert sind nicht dasselbe. Wann Best Practices greifen — und wann exploratives Ausprobieren in der Führungskräfteberatung nötig ist.",
+      "h1": "Komplex versus kompliziert",
+      "service": "/adaptive-organisationsentwicklung-2025/",
+      "image": "/storage/app/media/Strategieaktivierung/Themen-Bilder/Strategieaktivierung-Sebastian-Morgner-Strategien-erfolgreich-umsetzen.webp"
+    },
+    {
+      "slug": "mission-zweck-leitbild",
+      "title": "Mission, strategischer Zweck & Leitbild | Expedition Zukunft",
+      "description": "Keine Expedition ohne Mission: strategischer Zweck und Leitbild für Motivation und Strategieumsetzung — Anschluss an Leitbildentwicklung und Strategieberatung.",
+      "h1": "Mission, strategischer Zweck und Leitbild",
+      "service": "/leitbild-und-strategieentwicklung/",
+      "image": "/storage/app/media/Buch/Der-ganz-normale-change-wahnsinn.webp"
+    }
+  ],
+  "cover": "/storage/app/media/Buch/Expedition-Zukunft-Front.webp",
+  "authorImg": "/storage/app/media/Ansprechpartner/Sebastian-Morgner.webp"
+}

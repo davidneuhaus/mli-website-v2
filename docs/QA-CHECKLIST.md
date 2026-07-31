@@ -26,7 +26,7 @@
 
 ## Integrations
 
-- [ ] Usercentrics banner
+- [ ] MLI cookie banner (no Usercentrics); LinkedIn only after accept
 - [ ] HubSpot Meetings booking links
 - [ ] Calendly links (where present)
 - [ ] Contact email delivery

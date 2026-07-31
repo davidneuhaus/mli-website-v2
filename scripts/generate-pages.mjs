@@ -183,11 +183,31 @@ function cleanPage(html, urlPath) {
     }
   });
 
-  // Ensure Usercentrics is present once
-  if (!$("#usercentrics-cmp").length) {
-    $("head").append(
-      `<script id="usercentrics-cmp" src="https://web.cmp.usercentrics.eu/ui/loader.js" data-settings-id="0qtDDaIFgHMzAV" async></script>`
-    );
+  // Local cookie consent (replaces Usercentrics). LinkedIn loads only after marketing opt-in.
+  $("#usercentrics-cmp").remove();
+  $('script[src*="usercentrics"]').remove();
+  $("script").each((_, el) => {
+    const body = $(el).html() || "";
+    const src = $(el).attr("src") || "";
+    if (
+      body.includes("_linkedin_partner_id") ||
+      body.includes("lintrk") ||
+      src.includes("licdn.com") ||
+      src.includes("linkedin.com")
+    ) {
+      $(el).remove();
+    }
+  });
+  $("noscript").each((_, el) => {
+    const body = $(el).html() || "";
+    if (body.includes("ads.linkedin.com") || body.includes("licdn.com")) $(el).remove();
+  });
+  $('img[src*="ads.linkedin.com"], img[src*="licdn.com"]').remove();
+  if (!$('link[href="/css/mli-consent.css"]').length) {
+    $("head").append(`<link rel="stylesheet" href="/css/mli-consent.css">`);
+  }
+  if (!$('script[src="/js/mli-consent.js"]').length) {
+    $("head").append(`<script src="/js/mli-consent.js" defer></script>`);
   }
 
   // HubSpot forms loader for whitepaper placeholders

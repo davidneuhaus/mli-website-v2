@@ -1,0 +1,51 @@
+/* Expedition Zukunft — aligns with MLI petrol / rotpink language */
+.mli-ez-shell{
+  background:
+    radial-gradient(90% 70% at 100% 0%, rgba(13,92,99,.08), transparent 55%),
+    radial-gradient(70% 50% at 0% 100%, rgba(196,54,90,.04), transparent 50%),
+    linear-gradient(180deg,#f5f7f7 0%,#fff 42%);
+}
+.mli-ez-wrap{max-width:1100px;}
+.mli-ez-wrap .lead{font-size:1.15rem;line-height:1.55;}
+.mli-ez-wrap h2{margin-top:1.5rem;}
+.mli-ez-eyebrow{
+  text-transform:uppercase;
+  letter-spacing:.08em;
+  font-size:.78rem;
+  color:#0d5c63;
+  margin-bottom:.5rem;
+}
+.mli-ez-cover{
+  max-width:280px;
+  box-shadow:0 14px 36px rgba(13,40,45,.18);
+}
+.mli-ez-thumb{
+  width:100%;
+  height:160px;
+  object-fit:cover;
+}
+.mli-ez-list{padding-left:1.1rem;}
+.mli-ez-list li{margin-bottom:.45rem;}
+.mli-ez-author{background:rgba(13,92,99,.06);}
+.mli-ez-author-img{width:140px;height:140px;object-fit:cover;}
+.mli-ez-card:hover h3{text-decoration:underline;}
+.mli-ez-quote{
+  margin:1.25rem 0;
+  padding:.9rem 1.1rem;
+  border-left:3px solid #c4365a;
+  background:rgba(13,92,99,.05);
+}
+.mli-ez-quote p{margin:0 0 .4rem;font-size:1.05rem;line-height:1.45;}
+.mli-ez-quote footer{font-size:.85rem;color:#666;}
+.mli-ez-wrap .accordion-button:not(.collapsed){color:#c4365a;background:rgba(13,92,99,.06);box-shadow:none;}
+.mli-ez-cta{display:flex;flex-direction:column;align-items:flex-start;gap:.85rem;margin-top:.25rem;}
+.mli-ez-cta-primary{display:flex;flex-wrap:wrap;gap:.65rem;align-items:center;}
+.mli-ez-cta-primary .btn{margin:0;}
+.mli-ez-cta-links{font-size:.95rem;color:#666;}
+.mli-ez-cta-links a{color:#0d5c63;text-decoration:none;border-bottom:1px solid transparent;}
+.mli-ez-cta-links a:hover{color:#c4365a;border-bottom-color:rgba(196,54,90,.35);}
+.mli-ez-cta-links span{margin:0 .45rem;color:#bbb;}
+@media (max-width:767.98px){
+  .mli-ez-cover{max-width:220px;}
+  .mli-ez-cta-primary .btn{width:100%;text-align:center;}
+}

@@ -26,3 +26,14 @@ Language: de (primary), en (secondary)
 
 ## Optional
 - Sitemap: https://leadership-munich.org/sitemap.xml
+
+## Expedition Zukunft (book hub)
+- https://leadership-munich.org/expedition-zukunft/
+- https://leadership-munich.org/expedition-zukunft/faq/
+- https://leadership-munich.org/expedition-zukunft/strategie-als-erkundungsreise/
+- https://leadership-munich.org/expedition-zukunft/exploratives-fuehren/
+- https://leadership-munich.org/expedition-zukunft/komplex-versus-kompliziert/
+- https://leadership-munich.org/expedition-zukunft/mission-zweck-leitbild/
+
+## Strategie-Magazin Tiefgang
+- https://leadership-munich.org/strategie-magazin/

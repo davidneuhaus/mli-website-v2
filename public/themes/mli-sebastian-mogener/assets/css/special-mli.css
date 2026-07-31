@@ -29,11 +29,25 @@ body.home-layout #layout-nav.navbar {
     margin-right: 20px;
 }
 
+/* Desktop: open top-level nav dropdowns on hover (Bootstrap is click-only by default) */
+@media (min-width: 1200px) {
+  .navbar-nav > .nav-item.dropdown:hover > .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+  .navbar-nav > .nav-item.dropdown:hover > .nav-link {
+    color: #c4365a !important;
+  }
+}
+
 .dropdown-menu a.nav-link {
     color: #666!important;
     text-transform: none;
     font-size: .9em;
     line-height:1em;
+}
+.dropdown-menu a.nav-link:hover {
+    color: #c4365a !important;
 }
 
 .nav-border-bottom{border-bottom:1px solid #ccc;}

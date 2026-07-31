@@ -1,0 +1,80 @@
+/* Tiefgang Strategie-Magazin — fits MLI Wissen cluster */
+.mli-tg-shell{
+  background:
+    radial-gradient(80% 60% at 0% 0%, rgba(44,62,80,.10), transparent 55%),
+    radial-gradient(70% 50% at 100% 20%, rgba(196,54,90,.05), transparent 50%),
+    linear-gradient(180deg,#f3f5f7 0%,#fff 48%);
+}
+.mli-tg-wrap{max-width:1100px;}
+.mli-tg-wrap .lead{font-size:1.15rem;line-height:1.55;}
+.mli-tg-eyebrow{
+  text-transform:uppercase;
+  letter-spacing:.08em;
+  font-size:.78rem;
+  color:#0d5c63;
+  margin-bottom:.5rem;
+}
+.mli-tg-subtitle{
+  text-transform:uppercase;
+  letter-spacing:.04em;
+  font-size:.95rem;
+  color:#2c3e50;
+  font-weight:600;
+}
+.mli-tg-cover{
+  max-width:300px;
+  box-shadow:0 16px 40px rgba(20,30,45,.22);
+  border:1px solid rgba(44,62,80,.12);
+}
+.mli-tg-download{
+  background:linear-gradient(135deg, rgba(13,92,99,.08), rgba(44,62,80,.06));
+  border:1px solid rgba(13,92,99,.15);
+  padding:1.75rem 1.5rem;
+}
+.mli-tg-page{
+  color:#c4365a;
+  font-weight:700;
+  text-transform:uppercase;
+  letter-spacing:.06em;
+  font-size:.78rem;
+  margin-bottom:.35rem;
+}
+.mli-tg-page-inline{
+  color:#c4365a;
+  font-weight:700;
+  margin-right:.35rem;
+}
+.mli-tg-teaser{
+  height:100%;
+  padding-bottom:.5rem;
+  border-top:2px solid #c4365a;
+  padding-top:1rem;
+}
+.mli-tg-teaser-link{
+  color:#0d5c63;
+  font-weight:600;
+  text-decoration:none;
+}
+.mli-tg-teaser-link:hover{text-decoration:underline;}
+.mli-tg-more{
+  columns:1;
+  padding-left:1.1rem;
+}
+@media (min-width:768px){
+  .mli-tg-more{columns:2; column-gap:2.5rem;}
+}
+.mli-tg-more li{margin-bottom:.55rem; break-inside:avoid;}
+.mli-tg-pillar{
+  display:block;
+  height:100%;
+  padding:1rem 0;
+  color:inherit;
+  border-top:1px solid rgba(13,92,99,.2);
+}
+.mli-tg-pillar:hover h3{text-decoration:underline;}
+.mli-tg-author{background:rgba(13,92,99,.06);}
+.mli-tg-author-img{width:140px;height:140px;object-fit:cover;}
+.mli-tg-form-msg{color:#0d5c63;font-weight:600;}
+@media (max-width:767.98px){
+  .mli-tg-cover{max-width:220px;}
+}

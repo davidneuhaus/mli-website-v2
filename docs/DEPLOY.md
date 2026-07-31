@@ -68,7 +68,7 @@ CleverReach forms are kept temporarily (`eu2.cleverreach.com/f/298124-...`). Con
 - [ ] Contact form test email received
 - [ ] HubSpot whitepaper form submits
 - [ ] CleverReach subscribe works (or replacement ready)
-- [ ] Usercentrics banner appears; domain allowlisted
+- [ ] Cookie banner appears; LinkedIn gated behind marketing consent
 - [ ] Old URLs redirect (see `public/_redirects` / nginx conf)
 - [ ] HubSpot Meetings + Calendly CTAs open
 - [ ] DE + EN home and nav spot-checked on mobile

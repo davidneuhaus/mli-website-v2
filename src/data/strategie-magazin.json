@@ -1,0 +1,53 @@
+{
+  "slug": "strategie-magazin",
+  "title": "Tiefgang – Das Strategie-Magazin | MLI",
+  "description": "Tiefgang 1/2026: das Magazin für Strategie und Führung im Mittelstand. Cover-Story Führung im Zeitalter von KI — kostenlos per E-Mail herunterladen.",
+  "cover": "/storage/app/media/Magazin/Tiefgang-1-2026-Cover.png",
+  "pdf": "/storage/app/media/Magazin/Tiefgang-1-2026.pdf",
+  "issue": "1/2026",
+  "authorImg": "/storage/app/media/Ansprechpartner/Sebastian-Morgner.webp",
+  "teasers": [
+    {
+      "page": 5,
+      "title": "Führung als Werthebel: warum sie auf jede CFO-Agenda gehört",
+      "teaser": "Ein Gründer, ein Teller Grünkohl und die Frage, was ein Lebenswerk wert ist — warum Führungsqualität der am meisten unterschätzte Werttreiber ist."
+    },
+    {
+      "page": 16,
+      "title": "KI-Transformation: zwei Szenarien, wohin die Reise führen kann",
+      "teaser": "Denkweise vor Technologie: warum generische Visionen nicht helfen — und welche zwei Fragen Schlüsselpersonen zuerst beantworten sollten."
+    },
+    {
+      "page": 39,
+      "title": "»Der Kaffee schmeckt nicht«: die Kunst effektiver Kommunikation",
+      "teaser": "Wenn es nie um den Kaffee geht: wie blinde Flecken, Höflichkeit und Hierarchie echte Information vernichten — und was Führung dagegen tun kann."
+    }
+  ],
+  "moreArticles": [
+    { "page": 9, "title": "Strategie – mehr als Hoffnung mit Zwischenüberschriften?" },
+    { "page": 13, "title": "Was zeichnet eine Leistungskultur aus?" },
+    { "page": 21, "title": "Führung ist mehr, als Sie glauben" },
+    { "page": 27, "title": "Sinn & Struktur – das perfekte Führungssystem" },
+    { "page": 31, "title": "Leadership-Kompetenz-Kompass" },
+    { "page": 36, "title": "Die Neugier am Konflikt" },
+    { "page": 42, "title": "Was ist mein IKIGAI?" },
+    { "page": 46, "title": "Die wichtigste Führungskompetenz: Zeitmanagement" }
+  ],
+  "pillars": [
+    {
+      "title": "Strategieaktivierung",
+      "text": "Wie aus einer guten Strategie gelebte Wirklichkeit wird — Werthebel, gemeinsame Sprache, Leistungskultur und KI-Transformation.",
+      "href": "/strategieaktivierung/"
+    },
+    {
+      "title": "Führung entwickeln",
+      "text": "Führungssysteme, Kompetenz-Kompass und die Frage, was wirksame Führung jenseits sichtbarer Aktivität wirklich ausmacht.",
+      "href": "/stark-in-fuehrung/"
+    },
+    {
+      "title": "Selbstführung",
+      "text": "Konfliktfähigkeit, Kommunikation, Ikigai und Zeit — Impulse, die die eigene Person klüger einsetzen.",
+      "href": "/leadership-coaching-2025/"
+    }
+  ]
+}

@@ -65,7 +65,7 @@ Live October CMS
 | Whitepaper | HubSpot form embed placeholders via `src/data/hubspot.json` | Done (IDs pending) |
 | Newsletter | Keep CleverReach for now; confirm before launch | Temporary |
 | Load more | Client JS in `public/js/site.js` / `LoadMoreList.astro` | Done |
-| Cookie/analytics | Copy Usercentrics embed `data-settings-id="0qtDDaIFgHMzAV"` | Done (domain allowlist pending) |
+| Cookie/analytics | Local MLI consent (`/js/mli-consent.js`); LinkedIn after marketing opt-in | Done |
 | Booking CTAs | Keep HubSpot Meetings + Calendly links as on live site | Done |
 | EN content | Full crawl of EN routes included in static pages | Done |
 | Hosting mailer | PHP `mail()` for classic nginx/Apache; optional Web3Forms/Worker stub in `public/api/contact.js` | Choose at deploy |
@@ -146,7 +146,7 @@ Canonicals / JSON-LD always use `https://leadership-munich.org` (not github.io).
 | Whitepaper gate | October form | HubSpot embed (configure IDs) |
 | Newsletter | CleverReach + October AJAX | CleverReach POST only (temporary) |
 | Load more | `onLoadMore` | `public/js/site.js` |
-| Cookies | Usercentrics | Same embed, settings ID `0qtDDaIFgHMzAV` |
+| Cookies | Usercentrics | Local CMP — [docs/USERCENTRICS.md](docs/USERCENTRICS.md) |
 | Booking | HubSpot Meetings / Calendly | Unchanged links |
 
 ---
@@ -163,7 +163,7 @@ Static pages and most wiring are done. **Nothing below is optional for a real pr
 | Mailer host | PHP on VPS **or** Web3Forms / Worker via `public/api/contact.js` | GitHub Pages cannot send mail |
 | HubSpot whitepaper IDs | `src/data/hubspot.json` → `portalId`, `whitepaperFormId` | Paste when ready; rebuild; see `_todo` in that file |
 | Newsletter decision | CleverReach keep vs replace | [docs/NEWSLETTER.md](docs/NEWSLETTER.md) |
-| Usercentrics domains | UC admin for settings ID `0qtDDaIFgHMzAV` | Allow `leadership-munich.org`, `www`, staging, and `davidneuhaus.github.io` for preview — [docs/USERCENTRICS.md](docs/USERCENTRICS.md) |
+| Cookie consent | Local — no UC admin | [docs/USERCENTRICS.md](docs/USERCENTRICS.md); run `npm run consent:migrate` after HTML regen if needed |
 | Broken hero / content videos | [docs/broken-video-urls.md](docs/broken-video-urls.md) | Tags kept in HTML; fill correct URLs or drop files under `public/storage/...` |
 
 ### 2. Deploy & DNS cutover
@@ -180,7 +180,7 @@ Static pages and most wiring are done. **Nothing below is optional for a real pr
 - [ ] Contact form → message arrives in inbox
 - [ ] HubSpot whitepaper form submits (after IDs are live)
 - [ ] CleverReach subscribe (or replacement) works
-- [ ] Usercentrics banner shows; marketing tags only after consent; footer “Cookie-Einstellungen” opens settings
+- [ ] Cookie banner shows; LinkedIn only after consent; footer “Cookie-Einstellungen” / FAB opens settings
 - [ ] HubSpot Meetings + Calendly CTAs open
 - [ ] Keynotes “load more” works
 - [ ] Sample DE + EN pages, stories, keynotes on mobile — full list in [docs/QA-CHECKLIST.md](docs/QA-CHECKLIST.md)
